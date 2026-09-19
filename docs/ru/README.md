@@ -21,7 +21,15 @@
 
 Идентификаторы `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id` и `content_hash` не переводятся.
 
-Текущий baseline проекта находится в [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md). Английская версия: [`../en/project/PREP-00-baseline.md`](../en/project/PREP-00-baseline.md).
+## Опубликованные проектные документы
+
+- [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md) — исходный baseline проекта;
+- [`project/PREP-05-decision-process.md`](project/PREP-05-decision-process.md) — процесс принятия и трассировки решений;
+- [`project/open-questions.md`](project/open-questions.md) — живой реестр открытых вопросов;
+- [`templates/RSCH-template.md`](templates/RSCH-template.md) — шаблон исследования;
+- [`templates/DES-template.md`](templates/DES-template.md) — шаблон проектного документа.
+
+Английская документация находится в [`../en/`](../en/README.md).
 
 ## Границы классов документов
 

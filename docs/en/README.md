@@ -21,7 +21,15 @@ English and Russian documentation use mirrored structures under `docs/en/` and `
 
 Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, and `content_hash` are not translated.
 
-The current project baseline is [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md). Its Russian counterpart is [`../ru/project/PREP-00-baseline.md`](../ru/project/PREP-00-baseline.md).
+## Published project documents
+
+- [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md) — initial project baseline;
+- [`project/PREP-05-decision-process.md`](project/PREP-05-decision-process.md) — decision-making and traceability process;
+- [`project/open-questions.md`](project/open-questions.md) — living registry of open questions;
+- [`templates/RSCH-template.md`](templates/RSCH-template.md) — research document template;
+- [`templates/DES-template.md`](templates/DES-template.md) — design document template.
+
+Russian documentation is available under [`../ru/`](../ru/README.md).
 
 ## Document boundaries
 

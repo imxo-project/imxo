@@ -90,7 +90,7 @@ docs/
     └── ...
 ```
 
-Russian may be the working language during the early stages. English is maintained as the international project language.
+At the next stage, new substantive research and design documents are prepared in Russian first. Their English versions are created after the structure has been discussed and the Russian text approved. Existing public English and Russian documents remain aligned with the factual project state.
 
 For a future stable normative specification, the English version is expected to become normative and the Russian version to remain an official synchronized translation.
 
@@ -106,7 +106,7 @@ The project distinguishes these document classes:
 - glossary and terminology material;
 - implementation material.
 
-The final repository tree remains open.
+The base repository structure has been established. Additional directories are created as substantive material for the corresponding document classes appears.
 
 ## Licensing and brand context
 
@@ -140,12 +140,8 @@ The exact representation of fonts, glyph fallback, copyable text, text rendering
 
 `PREP-00` is complete. It records the initial baseline of accepted decisions and open questions.
 
-The current focus is:
+The base `PREP-01` infrastructure is complete. The repository structure, licensing, Brand Policy, contribution and security infrastructure, and initial documentation structure are in place.
 
-- finalizing the repository structure;
-- documenting the licensing model;
-- preparing the README and contribution infrastructure;
-- adding the initial brand assets;
-- organizing PREP documents;
-- preparing the research plan;
-- then beginning systematic container research.
+The next substantive step is discussion and approval of a systematic research plan. Technical research under an approved program has not yet begun. Do not invent a list of future `RSCH` documents before that plan is approved by the project owner.
+
+The project decision process is formalized in `docs/ru/project/PREP-05-decision-process.md`, with an English counterpart under `docs/en/project/`. It uses the linked artifact classes `Q / RSCH / REQ / DES / ADR / SPEC`. The language-specific `project/open-questions.md` files are the living registry of open architectural questions. Publication of this process does not mean that technical research under an approved program has begun.

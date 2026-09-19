@@ -6,13 +6,13 @@
 
 <p align="center">
   <a href="#status"><img src="https://img.shields.io/badge/status-research%20%26%20early%20design-7C3AED" alt="Project status: research and early design"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/code-Apache%202.0-D22128?logo=apache&amp;logoColor=white" alt="Code: Apache License 2.0"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache License 2.0"></a>
   <a href="LICENSE-CC-BY-4.0.txt"><img src="https://img.shields.io/badge/documentation-CC%20BY%204.0-EF9421?logo=creativecommons&amp;logoColor=white" alt="Documentation: CC BY 4.0"></a>
 </p>
 
 <p align="center"><a href="README.ru.md">Русская версия</a></p>
 
-**IMXO — Image Model eXchange Object**
+<p align="center"><strong>IMXO — Image Model eXchange Object</strong></p>
 
 IMXO is an open structured image format and standard intended to combine visual content with structured, machine-readable information in a single extensible object.
 
@@ -70,26 +70,23 @@ The project is currently in the **PREP** stage.
 
 Completed:
 
-- project name: **IMXO**;
-- normative expansion: **Image Model eXchange Object**;
-- file extension: **`.imxo`**;
-- GitHub organization created;
-- repository licensing model and license texts added;
-- initial baseline documented as **PREP-00**.
+- project identity: **IMXO — Image Model eXchange Object**, file extension **`.imxo`**;
+- GitHub organization and primary repository;
+- project domain: **imxo.org**;
+- base repository and documentation structure;
+- mixed licensing model and license texts;
+- Brand Policy;
+- contribution and security infrastructure;
+- initial baseline documented as **PREP-00**;
+- **PREP-01** repository bootstrap.
 
-In progress:
+Next:
 
-- repository and documentation structure;
-- project governance and contribution rules;
-- preparation of the research plan.
-
-The first technical research stages will begin after the project structure is finalized.
+The next project stage will focus on preparing and approving a systematic research plan before technical research work begins.
 
 ## Repository structure
 
-The repository structure is still being designed.
-
-It is expected to contain the central research, requirements, design decisions, specification drafts, machine-readable schemas, examples, documentation, and conformance-related materials for IMXO.
+The base repository structure has been established. Additional directories and sections will be added as the corresponding research, requirements, design decisions, specification, examples, schemas, and implementation materials emerge.
 
 Documentation indexes: [English](docs/en/README.md) and [Russian](docs/ru/README.md).
 
@@ -99,7 +96,7 @@ Reference implementations, SDKs, tools, and test suites may later remain in this
 
 Project documentation is maintained in **English and Russian** using mirrored structures.
 
-The working language during early design and research may be Russian, while English is maintained as the international project language.
+At the next stage, new substantive research and design documents are prepared in Russian first. An English version is created after the structure has been discussed and the Russian text approved. Existing public English and Russian documents remain aligned with the factual project state.
 
 When the project reaches a stable normative specification, the English version is expected to become the normative language, with the Russian version maintained as an official synchronized translation.
 
@@ -120,6 +117,7 @@ See [`LICENSES.md`](LICENSES.md) for the scope of each license.
 - **Name:** IMXO
 - **Expansion:** Image Model eXchange Object
 - **File extension:** `.imxo`
+- **Website:** https://imxo.org
 - **GitHub organization:** https://github.com/imxo-project
 
 ## Status

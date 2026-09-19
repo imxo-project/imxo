@@ -43,10 +43,12 @@ Do not jump directly from an idea to normative specification text before the fou
 
 ## Documentation languages
 
-1. Create and maintain mirrored English and Russian documentation.
-2. Use the same filenames, structure, and document identifiers for equivalent documents wherever possible.
-3. Do not translate technical identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, or `content_hash`.
-4. Preserve meaning and structure across language versions.
+1. Prepare new substantive research and design documents in Russian first.
+2. Create the English version after the structure has been discussed and the Russian text approved.
+3. Keep existing public English and Russian documents aligned with the factual project state.
+4. Use the same filenames, structure, and document identifiers for equivalent documents wherever possible.
+5. Do not translate technical identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, or `content_hash`.
+6. Preserve meaning and structure across language versions.
 
 ## Document boundaries and normative language
 
@@ -59,6 +61,8 @@ Do not jump directly from an idea to normative specification text before the fou
 7. Explicitly identify normative wording that has not yet been approved.
 
 ## Decisions and traceability
+
+Follow `docs/ru/project/PREP-05-decision-process.md` as the source process document for `Q / RSCH / REQ / DES / ADR / SPEC`, decision status, identifiers, and traceability. Use the English counterpart only as its synchronized translation.
 
 When editing project material:
 
