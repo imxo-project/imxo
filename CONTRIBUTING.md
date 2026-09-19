@@ -101,7 +101,7 @@ Test data must be original, appropriately licensed, or otherwise safe to redistr
 
 ## Licensing and brand assets
 
-Review [`LICENSES.md`](LICENSES.md) before contributing. Formal repository license texts have not yet been added. The project intends to use Apache License 2.0 for code and machine-readable implementation material, CC BY 4.0 for documentation, and a separate future policy for official brand assets.
+Review [`LICENSES.md`](LICENSES.md) before contributing. Code and machine-readable implementation material use the Apache License 2.0 provided in [`LICENSE`](LICENSE). Documentation uses CC BY 4.0 provided in [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt). Official brand assets are governed separately by [`BRAND_POLICY.md`](BRAND_POLICY.md).
 
 The complete licensing model is still being implemented. If the applicable license is unclear, discuss it before submitting the contribution.
 

@@ -12,4 +12,4 @@ Filenames use lowercase kebab-case and describe content or intended use. Size su
 
 ## Status and licensing
 
-All current files in this directory are brand assets. Do not assume that the planned documentation license applies to them. Their reuse and redistribution remain subject to the future IMXO Brand/Trademark Policy and any file-specific notices. See [`LICENSES.md`](../LICENSES.md).
+All current files in this directory are brand assets. The documentation license does not automatically apply to them. Their use is governed by [`BRAND_POLICY.md`](../BRAND_POLICY.md) and any file-specific notices. See [`LICENSES.md`](../LICENSES.md) for the repository license map.

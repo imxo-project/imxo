@@ -1,12 +1,10 @@
 # IMXO licensing
 
-This document records the planned license scope for different classes of material in the IMXO repository. It is a licensing map, not a substitute for the corresponding license texts or file-specific notices.
-
-The formal repository license files will be added after the Git repository is connected.
+This document records the license scope for different classes of material in the IMXO repository. It is a licensing map, not a substitute for the corresponding license texts or file-specific notices.
 
 ## Documentation
 
-The following material is intended to use the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/):
+The following material is licensed under the [Creative Commons Attribution 4.0 International license](LICENSE-CC-BY-4.0.txt):
 
 - specification text;
 - research and requirements;
@@ -16,7 +14,7 @@ The following material is intended to use the [Creative Commons Attribution 4.0 
 
 ## Code and implementation material
 
-The following material is intended to use the Apache License 2.0:
+The following material uses the [Apache License 2.0](LICENSE):
 
 - source code;
 - reference implementations and SDKs;
@@ -24,16 +22,20 @@ The following material is intended to use the Apache License 2.0:
 - executable examples;
 - machine-readable implementation schemas, unless stated otherwise.
 
-The Apache License 2.0 text will be added later after the repository is connected.
+The complete Apache License 2.0 text is provided in [`LICENSE`](LICENSE).
 
 ## Brand assets
 
-Official IMXO brand assets are not automatically covered by either license above. This includes the IMXO logo, Kumixo artwork, official brand illustrations, and other material explicitly marked as a brand asset.
+Official IMXO brand assets are excluded from the general Apache License 2.0 and CC BY 4.0 grants above. This includes the IMXO logo, Kumixo artwork, official brand illustrations, and other material explicitly marked as a brand asset.
 
-These materials are expected to be governed by a separate Brand/Trademark Policy. Until that policy and file-specific notices are present, do not assume permission to reuse or redistribute brand assets.
+These materials are governed separately by [`BRAND_POLICY.md`](BRAND_POLICY.md) and any file-specific notices.
+
+## Third-party material
+
+Third-party material must include a clear statement of its source and applicable license or other usage terms. Its presence in this repository does not relicense it under the general repository terms.
 
 ## File-specific notices
 
 When a file contains a different license notice, that notice takes precedence for that file.
 
-Until the formal license texts and notices are added, this document describes the project's intended licensing model rather than a complete repository-level license grant.
+The complete license texts are provided in [`LICENSE`](LICENSE) and [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt).

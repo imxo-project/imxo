@@ -5,7 +5,6 @@ authors:
   - family-names: "Malkov"
     given-names: "Fedor"
     orcid: "https://orcid.org/0000-0002-7905-4145"
-url: "https://imxo.org"
 abstract: "IMXO is an open structured image format and standard for combining visual content with related machine-readable information in a single extensible object."
 keywords:
   - "structured image"
@@ -14,5 +13,5 @@ keywords:
   - "provenance"
 
 # Version and release date are intentionally omitted while IMXO remains in the
-# research and early design stage. License metadata is also omitted until the
-# planned license texts are added; see LICENSES.md for the intended scope.
+# research and early design stage. License metadata is omitted because different
+# repository materials use different licenses; see LICENSES.md.

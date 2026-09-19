@@ -5,10 +5,12 @@
 </p>
 
 <p align="center">
-  <a href="https://imxo.org"><img src="https://img.shields.io/badge/website-imxo.org-2563EB" alt="IMXO website"></a>
   <a href="#status"><img src="https://img.shields.io/badge/status-research%20%26%20early%20design-7C3AED" alt="Project status: research and early design"></a>
-  <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/documentation-CC%20BY%204.0-EF9421?logo=creativecommons&amp;logoColor=white" alt="Documentation: CC BY 4.0"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/code-Apache%202.0-D22128?logo=apache&amp;logoColor=white" alt="Code: Apache License 2.0"></a>
+  <a href="LICENSE-CC-BY-4.0.txt"><img src="https://img.shields.io/badge/documentation-CC%20BY%204.0-EF9421?logo=creativecommons&amp;logoColor=white" alt="Documentation: CC BY 4.0"></a>
 </p>
+
+<p align="center"><a href="README.ru.md">Русская версия</a></p>
 
 **IMXO — Image Model eXchange Object**
 
@@ -72,13 +74,12 @@ Completed:
 - normative expansion: **Image Model eXchange Object**;
 - file extension: **`.imxo`**;
 - GitHub organization created;
-- project domain acquired: **imxo.org**;
+- repository licensing model and license texts added;
 - initial baseline documented as **PREP-00**.
 
 In progress:
 
 - repository and documentation structure;
-- licensing model;
 - project governance and contribution rules;
 - preparation of the research plan.
 
@@ -89,6 +90,8 @@ The first technical research stages will begin after the project structure is fi
 The repository structure is still being designed.
 
 It is expected to contain the central research, requirements, design decisions, specification drafts, machine-readable schemas, examples, documentation, and conformance-related materials for IMXO.
+
+Documentation indexes: [English](docs/en/README.md) and [Russian](docs/ru/README.md).
 
 Reference implementations, SDKs, tools, and test suites may later remain in this repository or move into separate repositories under the IMXO organization depending on their lifecycle and scope.
 
@@ -104,22 +107,19 @@ Technical identifiers, field names, object names, requirement identifiers, and d
 
 ## Licensing
 
-The formal repository license files will be added after the Git repository is connected.
+The repository uses a mixed licensing model:
 
-The planned mixed licensing model is:
+- Source code and machine-readable implementation materials use the **Apache License 2.0**. See [`LICENSE`](LICENSE).
+- Specification text, research, design documentation, and general documentation use **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt).
+- Official IMXO logos, Kumixo artwork, and other brand assets are excluded from the general code and documentation licenses and are governed by [`BRAND_POLICY.md`](BRAND_POLICY.md).
 
-- Source code and machine-readable implementation materials are intended to use the **Apache License 2.0**.
-- Specification text, research, design documentation, and general documentation are intended to use **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
-- Official IMXO logos, Kumixo artwork, and other brand assets are **not** covered by the documentation license and will be governed by a separate brand/trademark policy.
-
-See [`LICENSES.md`](LICENSES.md) for the planned scope of each license. The Apache License 2.0 text and the remaining license notices will be added later; until then, the licensing map records the project plan rather than a complete repository-level license grant.
+See [`LICENSES.md`](LICENSES.md) for the scope of each license.
 
 ## Project identity
 
 - **Name:** IMXO
 - **Expansion:** Image Model eXchange Object
 - **File extension:** `.imxo`
-- **Website:** https://imxo.org
 - **GitHub organization:** https://github.com/imxo-project
 
 ## Status

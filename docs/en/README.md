@@ -1,0 +1,30 @@
+# IMXO documentation
+
+IMXO documentation is organized by purpose so that research, requirements, design work, accepted decisions, and normative specification text remain distinct.
+
+## Document classes
+
+- `project/` — project preparation, baseline documents, rules, and plans;
+- `research/` — research into existing standards, containers, and technologies;
+- `requirements/` — IMXO requirements;
+- `design/` — design work performed before a final decision is accepted;
+- `decisions/` — ADRs and other accepted architectural decisions;
+- `specification/` — normative specification text;
+- `conformance/` — conformance rules and validation material;
+- `glossary/` — terms and definitions.
+
+Directories are created when their first substantive document is added.
+
+## Languages and identifiers
+
+English and Russian documentation use mirrored structures under `docs/en/` and `docs/ru/`. Equivalent documents use the same filenames and technical identifiers wherever possible.
+
+Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, and `content_hash` are not translated.
+
+The current project baseline is [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md). Its Russian counterpart is [`../ru/project/PREP-00-baseline.md`](../ru/project/PREP-00-baseline.md).
+
+## Document boundaries
+
+Research compares evidence and alternatives. Requirements state needs and constraints. Design documents develop proposals. ADRs record accepted decisions. The specification states the resulting normative requirements.
+
+A hypothesis or design proposal is not an accepted decision unless that status is explicitly recorded.
