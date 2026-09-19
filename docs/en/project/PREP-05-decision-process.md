@@ -1,6 +1,7 @@
 # PREP-05. IMXO Decision Process
 
-**Status:** DRAFT  
+**Status:** DONE  
+**Closing date:** 2026-09-19  
 **Document type:** preparatory project process  
 **Purpose:** to define how IMXO turns open questions into research, requirements, design alternatives, architectural decisions, and ultimately normative specification text.
 
@@ -49,9 +50,13 @@ One research document may produce several requirements. One requirement may rely
 
 A `Q` records a question that the project has not yet resolved.
 
-Open questions are maintained in a living registry:
+Living index of open questions:
 
 `docs/en/project/open-questions.md`
+
+Question cards:
+
+`docs/en/project/questions/`
 
 Each question has a permanent identifier:
 
@@ -59,15 +64,21 @@ Each question has a permanent identifier:
 
 Identifiers are never reused.
 
-Minimum question fields:
+Each material question has its own Markdown card. The `open-questions.md` index contains a concise list and links to the cards.
+
+Minimum card fields:
 
 - identifier;
 - statement;
 - status;
 - area;
 - source;
+- context;
 - related research;
+- related requirements;
+- design documents;
 - resolution, if the question is closed.
+- brief status history.
 
 Allowed statuses:
 
@@ -75,7 +86,7 @@ Allowed statuses:
 - `RESOLVED` — the question has been closed by an accepted decision;
 - `SUPERSEDED` — the question has been replaced by a more precise or broader formulation.
 
-A closed question is not removed from the registry.
+A closed question is not removed.
 
 ## 3. Research — `RSCH`
 
@@ -102,7 +113,7 @@ Research must:
 
 `COMPLETE` means that the research answers its question sufficiently for the current project stage.
 
-`COMPLETE` does not mean that the subject has been researched permanently or exhaustively.
+`COMPLETE` does not mean absolute or final completeness of the subject.
 
 A research document may recommend an alternative, but it cannot declare that alternative to be an IMXO architectural decision.
 
@@ -286,6 +297,13 @@ DES-0001-container-layout.md
 ADR-0001-container-strategy.md
 ```
 
+Question cards use the following pattern:
+
+```text
+Q-0001-container-architecture.md
+Q-0002-physical-file-structure.md
+```
+
 An ADR normally records one material decision in one file.
 
 An RSCH document normally covers one standalone research subject or research question.
@@ -323,21 +341,36 @@ Not every field is required in every document.
 
 ## 12. GitHub Issues and Discussions
 
-GitHub Issues, Discussions, and other external feedback channels are not mandatory parts of the internal IMXO process.
+After PREP-05 is closed, a GitHub Issue is the standard entry point for a new material question, proposal, or process change.
 
-At the current stage, the project does not use them as its primary decision-making system.
+An Issue by itself:
 
-If external proposals are received later, the maintainer may convert a material question into a standard IMXO artifact.
+- is not research;
+- is not a requirement;
+- is not an architectural decision;
+- does not automatically change the specification.
 
-Discussion on an external platform does not automatically become an architectural decision.
+After initial review, a material Issue may be formalized as one or more project artifacts:
+
+- `Q`;
+- `RSCH`;
+- `REQ`;
+- `DES`;
+- `ADR`.
+
+The existing `Q-0001…Q-0012` questions were transferred from PREP-00 and do not require retrospective Issues.
+
+GitHub Discussions may be used for external or preliminary discussion, but they are not an architectural decision source by themselves.
+
+A change to PREP-05 after its closure must begin with a GitHub Issue and proceed through a normal repository change that preserves history.
 
 ## 13. Decision authority
 
 `ACCEPTED` status is assigned according to the current IMXO governance model.
 
-PREP-05 does not establish a specific future governance structure.
-
 At the current stage, final architectural decisions are recorded by the project maintainer.
+
+A future working group or technical committee may use the same document system without changing identifiers or history.
 
 ## 14. Research completion criteria
 
@@ -358,9 +391,9 @@ Absolute research completeness is not required.
 
 PREP-00 remains the project's historical baseline checkpoint.
 
-Open questions from PREP-00 are transferred to the living `open-questions.md` registry.
+Open questions from PREP-00 have been transferred to the living registry and separate `Q` cards.
 
-After that transfer, PREP-00 is not rewritten merely to change question statuses.
+PREP-00 is not rewritten merely to change the current status of those questions.
 
 ## 16. Relationship to PREP-06
 
@@ -368,19 +401,26 @@ PREP-05 defines:
 
 - document classes;
 - the decision process;
-- the open-question registry;
+- the open-question registry and cards;
 - traceability;
-- revision of decisions.
+- revision of decisions;
+- the role of Issues as the entry point after process preparation is complete.
 
 PREP-06 will separately define the rules for writing and structuring the normative standard.
 
 ## 17. PREP-05 outcome
 
-Once PREP-05 is accepted, the project must have:
+PREP-05 is complete.
+
+The project has:
 
 - a formal decision process;
-- a living registry of open questions;
+- a living index of open questions;
+- separate cards for material questions;
 - a permanent identifier system;
-- `RSCH`, `DES`, and `ADR` templates;
+- `Q`, `RSCH`, `DES`, and `ADR` templates;
 - rules for forming and tracing `REQ` entries;
-- rules for revising decisions.
+- rules for revising decisions;
+- a defined role for GitHub Issues in subsequent changes.
+
+Further process changes follow the normal project change process and do not return PREP-05 to an unfinished preparatory state.

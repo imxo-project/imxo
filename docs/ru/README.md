@@ -24,10 +24,13 @@
 ## Опубликованные проектные документы
 
 - [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md) — исходный baseline проекта;
-- [`project/PREP-05-decision-process.md`](project/PREP-05-decision-process.md) — процесс принятия и трассировки решений;
-- [`project/open-questions.md`](project/open-questions.md) — живой реестр открытых вопросов;
+- [`project/PREP-05-decision-process.md`](project/PREP-05-decision-process.md) — завершённый процесс принятия и трассировки решений;
+- [`project/open-questions.md`](project/open-questions.md) — живой индекс открытых вопросов;
+- [`project/questions/`](project/questions/) — отдельные карточки существенных вопросов;
+- [`templates/Q-template.md`](templates/Q-template.md) — шаблон карточки открытого вопроса;
 - [`templates/RSCH-template.md`](templates/RSCH-template.md) — шаблон исследования;
-- [`templates/DES-template.md`](templates/DES-template.md) — шаблон проектного документа.
+- [`templates/DES-template.md`](templates/DES-template.md) — шаблон проектного документа;
+- [`templates/ADR-template.md`](templates/ADR-template.md) — шаблон архитектурного решения.
 
 Английская документация находится в [`../en/`](../en/README.md).
 

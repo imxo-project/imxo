@@ -62,7 +62,9 @@ Do not jump directly from an idea to normative specification text before the fou
 
 ## Decisions and traceability
 
-Follow `docs/ru/project/PREP-05-decision-process.md` as the source process document for `Q / RSCH / REQ / DES / ADR / SPEC`, decision status, identifiers, and traceability. Use the English counterpart only as its synchronized translation.
+Follow `docs/ru/project/PREP-05-decision-process.md` as the authoritative process document for `Q / RSCH / REQ / DES / ADR / SPEC`, decision status, identifiers, and traceability. Use an English counterpart only when it has been synchronized with and approved from the Russian source.
+
+After PREP-05, a new material question or process change must begin with a GitHub Issue. An Issue is not an accepted requirement, design, architectural decision, or specification change. Authoritative state is recorded in the project documents.
 
 When editing project material:
 
