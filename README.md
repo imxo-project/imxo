@@ -1,0 +1,137 @@
+# IMXO
+
+<p align="center">
+  <img src="assets/brand/readme/imxo-readme-hero-light.png" alt="IMXO — Image Model eXchange Object">
+</p>
+
+<p align="center">
+  <a href="https://imxo.org"><img src="https://img.shields.io/badge/website-imxo.org-2563EB" alt="IMXO website"></a>
+  <a href="#status"><img src="https://img.shields.io/badge/status-research%20%26%20early%20design-7C3AED" alt="Project status: research and early design"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/documentation-CC%20BY%204.0-EF9421?logo=creativecommons&amp;logoColor=white" alt="Documentation: CC BY 4.0"></a>
+</p>
+
+**IMXO — Image Model eXchange Object**
+
+IMXO is an open structured image format and standard intended to combine visual content with structured, machine-readable information in a single extensible object.
+
+The project explores a model in which an image is not limited to a flat raster. An IMXO file may contain raster and vector representations, text, semantic regions, annotations, provenance information, integrity data, accessibility information, and multiple related representations of the same visual object.
+
+> IMXO is currently in the research and early design stage. The file format, container layout, logical object model, and conformance rules are not yet finalized.
+
+## Goals
+
+IMXO is being designed to provide a common open representation for images that can be useful to people, applications, AI systems, computer vision tools, editors, viewers, capture tools, and archival workflows.
+
+The project is intended to support, among other things:
+
+- raster image representations;
+- vector representations and overlays;
+- text associated with image regions;
+- semantic regions and relationships;
+- multiple annotation sets;
+- computer vision annotations;
+- provenance and source information;
+- integrity and trust-related metadata;
+- accessibility descriptions;
+- multiple representations of the same image or object;
+- safe extensibility and preservation of unknown extensions.
+
+IMXO is not intended to replace every existing raster or vector codec. Existing codecs may be used as representations inside the broader IMXO model.
+
+## Static and passive by design
+
+The first version of the standard follows a strict principle:
+
+**IMXO v0.1 must not contain executable or dynamic behavior.**
+
+The format is intended to remain static and passive. It must not embed JavaScript, macros, event handlers, automatic network requests, executable workflows, externally updated dynamic fields, or similar active behavior.
+
+## Research-first approach
+
+The project does not assume that a completely new container must be invented.
+
+Before the physical and detailed logical model is finalized, the project will study existing container and image-related architectures, including:
+
+- JUMBF / JLINK;
+- ISO BMFF / HEIF;
+- RIFF;
+- PNG chunk architecture;
+- TIFF / BigTIFF;
+- ZIP-like container models;
+- other relevant standards and container systems discovered during research.
+
+The decision between a custom IMXO container, a profile built on an existing container, or a hybrid approach will be made only after this research.
+
+## Current project state
+
+The project is currently in the **PREP** stage.
+
+Completed:
+
+- project name: **IMXO**;
+- normative expansion: **Image Model eXchange Object**;
+- file extension: **`.imxo`**;
+- GitHub organization created;
+- project domain acquired: **imxo.org**;
+- initial baseline documented as **PREP-00**.
+
+In progress:
+
+- repository and documentation structure;
+- licensing model;
+- project governance and contribution rules;
+- preparation of the research plan.
+
+The first technical research stages will begin after the project structure is finalized.
+
+## Repository structure
+
+The repository structure is still being designed.
+
+It is expected to contain the central research, requirements, design decisions, specification drafts, machine-readable schemas, examples, documentation, and conformance-related materials for IMXO.
+
+Reference implementations, SDKs, tools, and test suites may later remain in this repository or move into separate repositories under the IMXO organization depending on their lifecycle and scope.
+
+## Languages
+
+Project documentation is maintained in **English and Russian** using mirrored structures.
+
+The working language during early design and research may be Russian, while English is maintained as the international project language.
+
+When the project reaches a stable normative specification, the English version is expected to become the normative language, with the Russian version maintained as an official synchronized translation.
+
+Technical identifiers, field names, object names, requirement identifiers, and document identifiers are not translated.
+
+## Licensing
+
+The formal repository license files will be added after the Git repository is connected.
+
+The planned mixed licensing model is:
+
+- Source code and machine-readable implementation materials are intended to use the **Apache License 2.0**.
+- Specification text, research, design documentation, and general documentation are intended to use **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+- Official IMXO logos, Kumixo artwork, and other brand assets are **not** covered by the documentation license and will be governed by a separate brand/trademark policy.
+
+See [`LICENSES.md`](LICENSES.md) for the planned scope of each license. The Apache License 2.0 text and the remaining license notices will be added later; until then, the licensing map records the project plan rather than a complete repository-level license grant.
+
+## Project identity
+
+- **Name:** IMXO
+- **Expansion:** Image Model eXchange Object
+- **File extension:** `.imxo`
+- **Website:** https://imxo.org
+- **GitHub organization:** https://github.com/imxo-project
+
+## Status
+
+IMXO is experimental and under active design.
+
+No current document should be treated as a final standard unless it is explicitly marked as normative and released as part of a future stable specification.
+
+## Citation
+
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff). It intentionally omits a release version and date while IMXO remains in the research and early design stage.
+
+---
+
+Contributions, technical criticism, alternative designs, and implementation feedback are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) before submitting an Issue or pull request.
