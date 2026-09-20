@@ -25,12 +25,15 @@ Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, an
 
 - [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md) — initial project baseline;
 - [`project/PREP-05-decision-process.md`](project/PREP-05-decision-process.md) — completed decision-making and traceability process;
+- [`project/PREP-06-specification-writing-rules.md`](project/PREP-06-specification-writing-rules.md) — completed writing rules for the future normative specification;
 - [`project/open-questions.md`](project/open-questions.md) — living index of open questions;
 - [`project/questions/`](project/questions/) — individual cards for material questions;
 - [`templates/Q-template.md`](templates/Q-template.md) — open-question card template;
 - [`templates/RSCH-template.md`](templates/RSCH-template.md) — research document template;
 - [`templates/DES-template.md`](templates/DES-template.md) — design document template;
-- [`templates/ADR-template.md`](templates/ADR-template.md) — architectural decision template.
+- [`templates/ADR-template.md`](templates/ADR-template.md) — architectural decision template;
+- [`templates/SPEC-section-template.md`](templates/SPEC-section-template.md) — future normative specification section template;
+- [`templates/TRACEABILITY-register-template.md`](templates/TRACEABILITY-register-template.md) — separate informative bidirectional traceability register template.
 
 Russian documentation is available under [`../ru/`](../ru/README.md).
 

@@ -76,6 +76,16 @@ When editing project material:
 6. preserve traceability between research, requirements, decisions, and specification wherever possible;
 7. do not add new design work to `PREP-00` unless the baseline itself requires correction.
 
+## Specification writing
+
+Follow `docs/ru/project/PREP-06-specification-writing-rules.md` when preparing future `SPEC` material.
+
+1. Do not introduce BCP 14 synonyms beyond `MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, and `MAY` without a recorded decision.
+2. Do not hide normative requirements in an Informative Example, Note, Rationale, or Implementation Note.
+3. Do not resolve architecture through a writing rule or style guide.
+4. Do not create one `REQ` artifact for every `MUST`; preserve meaningful requirement granularity.
+5. Do not place traceability metadata beside every `SPEC` paragraph; maintain it in the separate Informative Traceability Register.
+
 ## External standards and sources
 
 When researching external standards:
