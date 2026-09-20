@@ -26,14 +26,20 @@
 - [`project/PREP-00-baseline.md`](project/PREP-00-baseline.md) — исходный baseline проекта;
 - [`project/PREP-05-decision-process.md`](project/PREP-05-decision-process.md) — завершённый процесс принятия и трассировки решений;
 - [`project/PREP-06-specification-writing-rules.md`](project/PREP-06-specification-writing-rules.md) — завершённые правила подготовки будущей нормативной спецификации;
+- [`project/PREP-07-licensing-governance.md`](project/PREP-07-licensing-governance.md) — завершённое подготовительное решение по лицензированию, управлению проектом и IPR;
 - [`project/open-questions.md`](project/open-questions.md) — живой индекс открытых вопросов;
 - [`project/questions/`](project/questions/) — отдельные карточки существенных вопросов;
+- [`project/questions/Q-0013-accessibility-regulatory-adoption.md`](project/questions/Q-0013-accessibility-regulatory-adoption.md) — открытый вопрос о стандартах доступности, нормативном сопоставлении и принятии формата;
 - [`templates/Q-template.md`](templates/Q-template.md) — шаблон карточки открытого вопроса;
 - [`templates/RSCH-template.md`](templates/RSCH-template.md) — шаблон исследования;
 - [`templates/DES-template.md`](templates/DES-template.md) — шаблон проектного документа;
 - [`templates/ADR-template.md`](templates/ADR-template.md) — шаблон архитектурного решения;
 - [`templates/SPEC-section-template.md`](templates/SPEC-section-template.md) — шаблон раздела будущей нормативной спецификации;
 - [`templates/TRACEABILITY-register-template.md`](templates/TRACEABILITY-register-template.md) — шаблон отдельного информативного реестра двунаправленной трассировки.
+
+Официальные политики проекта: [`GOVERNANCE.md`](../../GOVERNANCE.md) и [`IPR_POLICY.md`](../../IPR_POLICY.md). Они публикуются только на английском языке.
+
+Подготовительный цикл `PREP-00…PREP-07` завершён. Следующий шаг — согласование систематического плана исследований перед началом работ класса `RSCH`.
 
 Английская документация находится в [`../en/`](../en/README.md).
 

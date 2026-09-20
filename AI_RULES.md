@@ -134,6 +134,17 @@ Never treat the presence of data inside an IMXO object as proof that it is trust
 6. Always write the project name as **IMXO** and use **Image Model eXchange Object** as its normative expansion.
 7. Do not present old or experimental expansions as official.
 
+## Governance, IPR, and accessibility claims
+
+1. Treat `GOVERNANCE.md` as the source of truth for project governance.
+2. Treat `IPR_POLICY.md` as the source of truth for IPR handling.
+3. Do not claim that IMXO is patent-free.
+4. Do not claim that an accessibility law or standard requires IMXO.
+5. Do not claim that storing text, descriptions, or alt-like data automatically provides WCAG, EAA, Section 508, ADA, or other legal compliance.
+6. Do not infer maintainer status or governance rights from contribution volume or duration.
+7. Do not introduce a CLA, DCO, or copyright assignment without an explicit project decision.
+8. Do not begin `RSCH` work from `Q-0013` until the systematic research plan has been approved.
+
 ## Repository hygiene
 
 Until the repository structure is finalized:

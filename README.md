@@ -66,7 +66,7 @@ The decision between a custom IMXO container, a profile built on an existing con
 
 ## Current project state
 
-The project is currently in the **PREP** stage.
+The **PREP** preparation cycle is complete. IMXO remains in the research and early-design stage.
 
 Completed:
 
@@ -77,12 +77,14 @@ Completed:
 - mixed licensing model and license texts;
 - Brand Policy;
 - contribution and security infrastructure;
-- initial baseline documented as **PREP-00**;
-- **PREP-01** repository bootstrap.
+- preparation stages **PREP-00 through PREP-07**;
+- published project [`GOVERNANCE.md`](GOVERNANCE.md) and [`IPR_POLICY.md`](IPR_POLICY.md).
 
 Next:
 
-The next project stage will focus on preparing and approving a systematic research plan before technical research work begins.
+The next step is to approve a systematic research plan and then begin technical work through the project's `RSCH` process.
+
+The container architecture, logical object model, and normative specification remain open and have not been finalized by completion of the PREP cycle.
 
 ## Repository structure
 

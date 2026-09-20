@@ -1,2 +1,5 @@
 # Local staging area for source material to process
 /temp/
+
+# Local AI assistant instructions
+/CLAUDE.md
