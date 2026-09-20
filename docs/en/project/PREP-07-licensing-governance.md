@@ -156,6 +156,18 @@ PREP-07 does not predetermine the future organizational form of a mature IMXO pr
 
 Governance may evolve with the project.
 
+The governance model should be reviewed when the scale or external role of the project changes materially.
+
+Events that may justify such a review include:
+
+- appointment of the first additional long-term maintainer with substantial delegated responsibility;
+- adoption or implementation of IMXO by an independent external organization or significant third-party implementer;
+- sustained participation by multiple independent contributors or organizations;
+- formal engagement with a standards organization, foundation, consortium, or similar external body;
+- ecosystem adoption at a level where broader representation or additional review mechanisms would materially improve trust, interoperability, or project continuity.
+
+These events do not automatically change governance, transfer authority, create voting rights, or alter the Project Lead role. Any governance change requires an explicit, documented, and published decision.
+
 Any material change must:
 
 - be explicit;

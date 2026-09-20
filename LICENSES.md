@@ -24,6 +24,14 @@ The following material uses the [Apache License 2.0](LICENSE):
 
 The complete Apache License 2.0 text is provided in [`LICENSE`](LICENSE).
 
+## Patent and implementation-related IPR
+
+The licenses described in this document govern copyright and related rights for the corresponding project materials.
+
+They do not by themselves guarantee that every technology described by the IMXO specification is free from patent or similar implementation-related intellectual-property restrictions.
+
+See [`IPR_POLICY.md`](IPR_POLICY.md) for the IMXO project policy on patents and similar implementation-related IPR.
+
 ## Brand assets
 
 Official IMXO brand assets are excluded from the general Apache License 2.0 and CC BY 4.0 grants above. This includes the IMXO logo, Kumixo artwork, official brand illustrations, and other material explicitly marked as a brand asset.

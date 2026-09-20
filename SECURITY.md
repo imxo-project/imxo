@@ -8,7 +8,7 @@ Do not report an unpatched vulnerability or other potentially sensitive security
 
 Contact the project maintainer privately:
 
-- Email: [iksut@ya.ru](mailto:iksut@ya.ru)
+- Email: [fmalkov91@gmail.com](mailto:fmalkov91@gmail.com)
 - Telegram: [@FyodorMalkov](https://t.me/FyodorMalkov)
 
 Include enough information to understand and reproduce the issue, but do not send secrets, personal data, or unrelated confidential material.

@@ -68,10 +68,10 @@ Those decisions require research and the normal `RSCH / REQ / DES / ADR / SPEC` 
 
 ## Related questions
 
-- Q-0010 — Accessibility model
-- Q-0003 — Logical object model
-- Q-0006 — Text, fonts and glyph fallback
-- Q-0012 — Conformance model
+- [Q-0010 — Accessibility model](Q-0010-accessibility-model.md)
+- [Q-0003 — Logical object model](Q-0003-logical-object-model.md)
+- [Q-0006 — Text, fonts and glyph fallback](Q-0006-text-fonts-glyph-fallback.md)
+- [Q-0012 — Conformance model](Q-0012-conformance-model.md)
 
 ## Initial authoritative sources to examine
 
@@ -92,4 +92,3 @@ The question remains OPEN.
 ## History
 
 - 2026-09-20 — Created after PREP-07 discussion to separate regulatory/adoption research from the technical accessibility-model question.
-

@@ -114,6 +114,14 @@ The repository uses a mixed licensing model:
 
 See [`LICENSES.md`](LICENSES.md) for the scope of each license.
 
+## Governance
+
+IMXO currently uses a founder-led, maintainer-based governance model with open participation and publicly traceable technical decisions.
+
+The current governance model is described in [`GOVERNANCE.md`](GOVERNANCE.md).
+
+Patent and similar implementation-related intellectual-property matters are addressed separately in [`IPR_POLICY.md`](IPR_POLICY.md).
+
 ## Project identity
 
 - **Name:** IMXO
