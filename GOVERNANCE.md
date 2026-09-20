@@ -134,22 +134,22 @@ The project decision process is defined by PREP-05 and the corresponding public 
 Depending on the subject, a decision may involve:
 
 ```text
-Issue
+Issue, when useful for public discussion or coordination
   ↓
-Q
-  ↓
-RSCH
-  ↓
-REQ
-  ↓
-DES
-  ↓
-ADR
-  ↓
-SPEC
+USE ↔ Q
+ \    /
+  RSCH
+    ↓
+   REQ
+    ↓
+   DES
+    ↓
+   ADR
+    ↓
+   SPEC
 ```
 
-Not every question must pass through every artifact class.
+This is not a mandatory linear pipeline. Not every question, use case, or decision must pass through every artifact class, and an internal artifact does not require an Issue when the Issue would add no independent value.
 
 An Issue, Pull Request, discussion, or private conversation is not by itself an architectural decision.
 

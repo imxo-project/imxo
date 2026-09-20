@@ -62,9 +62,9 @@ Do not jump directly from an idea to normative specification text before the fou
 
 ## Decisions and traceability
 
-Follow `docs/ru/project/PREP-05-decision-process.md` as the authoritative process document for `Q / RSCH / REQ / DES / ADR / SPEC`, decision status, identifiers, and traceability. Use an English counterpart only when it has been synchronized with and approved from the Russian source.
+Follow `docs/ru/project/PREP-05-decision-process.md`, as amended by PREP-08, as the authoritative process document for `USE / Q / RSCH / REQ / DES / ADR / SPEC`, artifact status, identifiers, and traceability. Use an English counterpart only when it has been synchronized with and approved from the Russian source.
 
-After PREP-05, a new material question or process change must begin with a GitHub Issue. An Issue is not an accepted requirement, design, architectural decision, or specification change. Authoritative state is recorded in the project documents.
+Use GitHub Issues as the primary public entry point and coordination tool for external proposals and material public discussion. Do not require an Issue as a ritual step when an internal artifact can be created directly and the Issue adds no independent value. An Issue is not an accepted requirement, design, architectural decision, or specification change. Authoritative state is recorded in the project documents.
 
 When editing project material:
 
@@ -85,6 +85,17 @@ Follow `docs/ru/project/PREP-06-specification-writing-rules.md` when preparing f
 3. Do not resolve architecture through a writing rule or style guide.
 4. Do not create one `REQ` artifact for every `MUST`; preserve meaningful requirement granularity.
 5. Do not place traceability metadata beside every `SPEC` paragraph; maintain it in the separate Informative Traceability Register.
+
+## Use cases and research planning
+
+1. Treat `USE` as Informative, not normative.
+2. Do not convert a `USE` directly into a `REQ` without project reasoning and the applicable process.
+3. Do not treat `COMPLETE` as `ACCEPTED` or as a support commitment.
+4. Do not treat `TARGET` as automatic v0.1 scope or as an automatic requirement.
+5. Do not invent `PLAN-*` artifacts.
+6. Do not reserve `RSCH` identifiers in `research-plan.md`; assign an identifier only when an actual `RSCH` is created.
+7. Follow PREP-08 for the `USE` lifecycle, disposition, language workflow, and traceability.
+8. Do not create `USE-0001`, an initial research plan, or an `RSCH` as part of PREP-08 implementation.
 
 ## External standards and sources
 

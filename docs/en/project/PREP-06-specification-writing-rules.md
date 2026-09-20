@@ -526,15 +526,15 @@ It is an informative project engineering artifact, not a normative part of `SPEC
 Typical relationship:
 
 ```text
-Q / RSCH
-   ↓
-  REQ
-   ↓
-  DES
-   ↓
-  ADR
-   ↓
-  SPEC
+USE / Q / RSCH
+      ↓
+     REQ
+      ↓
+     DES
+      ↓
+     ADR
+      ↓
+     SPEC
 ```
 
 This may later be extended as follows:
@@ -551,8 +551,8 @@ Test vector / validator test
 
 Traceability must make it possible to:
 
-- navigate from a question or requirement to the accepted decision and normative text;
-- navigate from a normative element back to the requirement, ADR, and originating question or research.
+- navigate from a use case, question, or requirement to the accepted decision and normative text;
+- navigate from a normative element back to the requirement, ADR, and originating `USE`, question, or research.
 
 ### 27.2. A complete linear chain is not required
 
@@ -560,6 +560,8 @@ Not every artifact is required to have every intermediate class.
 
 Many-to-many relationships are permitted:
 
+- one USE → multiple Q or REQ;
+- multiple USE → one REQ;
 - one RSCH → multiple REQ;
 - multiple RSCH → one REQ;
 - multiple REQ → one DES;

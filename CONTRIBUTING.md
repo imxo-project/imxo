@@ -143,7 +143,7 @@ Participation does not automatically grant decision-making authority over the of
 
 The current governance model, Project Lead role, maintainer model, and decision authority are described in [`GOVERNANCE.md`](GOVERNANCE.md).
 
-Substantial technical decisions remain publicly traceable through the project's Q / RSCH / REQ / DES / ADR / SPEC process.
+Substantial technical decisions remain publicly traceable through the project's USE / Q / RSCH / REQ / DES / ADR / SPEC process.
 
 ## Contact and collaboration
 

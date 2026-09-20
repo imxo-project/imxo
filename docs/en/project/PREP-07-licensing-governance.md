@@ -311,6 +311,6 @@ Following acceptance of PREP-07:
 - the terms of previously accepted contributions are protected from retroactive change;
 - a separate English `IPR_POLICY.md` is introduced;
 - accessibility is formally included as a decision criterion and a separate research direction;
-- the PREP preparation cycle is considered complete.
+- the initial PREP-00 through PREP-07 preparation baseline is considered complete.
 
 The next project stage is approval and launch of a systematic research plan.

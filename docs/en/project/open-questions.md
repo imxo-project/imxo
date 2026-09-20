@@ -10,7 +10,7 @@ The initial `Q-0001…Q-0012` questions were transferred from `PREP-00`. PREP-00
 - `Q-xxxx` identifiers are never reused;
 - a question is not removed after it is closed;
 - each material question has its own Markdown card;
-- after PREP-05, a new material question begins with a GitHub Issue and receives a `Q-xxxx` identifier when appropriate after initial review.
+- GitHub Issues are the primary public entry point for external proposals and material public discussion; an internal `Q` card may be created directly when a separate Issue adds no independent value.
 
 ## Registry
 
@@ -34,4 +34,4 @@ The initial `Q-0001…Q-0012` questions were transferred from `PREP-00`. PREP-00
 
 The next available identifier is `Q-0014`.
 
-A new material question is first submitted through a GitHub Issue. After the maintainer decides to include it in the formal process, a card is created from `Q-template.md`, the next permanent `Q-xxxx` identifier is assigned, and this index is updated.
+An external material question, or one needing public coordination, is normally submitted through a GitHub Issue first. After the maintainer decides to include it in the formal process, a card is created from `Q-template.md`, the next permanent `Q-xxxx` identifier is assigned, and this index is updated. The Project Lead may create a card directly when an Issue would only duplicate work already discussed and being documented.

@@ -4,9 +4,9 @@
 
 ## 1. Requirements traceability
 
-| Requirement | Source questions | Research | Design | Decision | Specification |
-|---|---|---|---|---|---|
-| REQ-XXXX | Q-XXXX | RSCH-XXXX | DES-XXXX | ADR-XXXX | stable SPEC anchor |
+| Requirement | Use cases | Questions | Research | Design | Decision | Specification |
+|---|---|---|---|---|---|---|
+| REQ-XXXX | USE-XXXX | Q-XXXX | RSCH-XXXX | DES-XXXX | ADR-XXXX | stable SPEC anchor |
 
 Multiple references are permitted in a single cell.
 
@@ -14,15 +14,15 @@ There is no requirement to fill every artifact class artificially when it is not
 
 ## 2. Decision traceability
 
-| Decision | Questions | Research | Requirements | Design | Specification |
-|---|---|---|---|---|---|
-| ADR-XXXX | Q-XXXX | RSCH-XXXX | REQ-XXXX | DES-XXXX | stable SPEC anchor |
+| Decision | Use cases | Questions | Research | Requirements | Design | Specification |
+|---|---|---|---|---|---|---|
+| ADR-XXXX | USE-XXXX | Q-XXXX | RSCH-XXXX | REQ-XXXX | DES-XXXX | stable SPEC anchor |
 
 ## 3. Specification backtrace
 
-| SPEC anchor | Requirement | Decision | Research / Question |
-|---|---|---|---|
-| stable SPEC anchor | REQ-XXXX | ADR-XXXX | RSCH-XXXX / Q-XXXX |
+| SPEC anchor | Requirement | Decision | Use cases | Questions | Research |
+|---|---|---|---|---|---|
+| stable SPEC anchor | REQ-XXXX | ADR-XXXX | USE-XXXX | Q-XXXX | RSCH-XXXX |
 
 This table provides reverse traceability from normative text to the origin of a decision.
 
@@ -41,6 +41,7 @@ PREP-06 does not require this table to be created before the corresponding mater
 - The Traceability Register is Informative.
 - It does not replace normative `SPEC`.
 - Many-to-many relationships are permitted.
+- The `Use cases` and `Questions` fields are optional and are not created artificially for every relationship.
 - References use stable identifiers or anchors where possible.
 - A displayed section number must not be the sole reference point.
 - A missing intermediate artifact class is not created merely to fill the table.

@@ -3,9 +3,9 @@
 **Status:** DONE  
 **Closing date:** 2026-09-19  
 **Document type:** preparatory project process  
-**Purpose:** to define how IMXO turns open questions into research, requirements, design alternatives, architectural decisions, and ultimately normative specification text.
+**Purpose:** to define how IMXO connects use cases, open questions, research, requirements, design alternatives, architectural decisions, and normative specification text.
 
-> PREP-05 defines the decision-making and traceability process. Rules for writing normative standard text, normative terminology, Draft versions, and specification structure belong to PREP-06.
+> PREP-05 defines the decision-making and traceability process. Rules for writing normative standard text, normative terminology, Draft versions, and specification structure belong to PREP-06. The `USE` class and the role of the research plan were added by the targeted PREP-08 amendment without reopening PREP-05.
 
 ---
 
@@ -15,34 +15,35 @@ IMXO does not use a single artificial status chain such as:
 
 `OPEN → RESEARCH → PROPOSED → ACCEPTED → NORMATIVE`
 
-Research, requirements, design proposals, architectural decisions, and normative text are different artifact types with different lifecycles.
+Use cases, open questions, research, requirements, design proposals, architectural decisions, and normative text are different artifact types with different lifecycles.
 
 Instead, IMXO uses linked document classes:
 
 - `Q` — open question;
+- `USE` — informative use case;
 - `RSCH` — research;
 - `REQ` — requirement;
 - `DES` — design and comparison of alternatives;
 - `ADR` — architectural decision;
 - `SPEC` — normative specification text.
 
-A typical path may look like this:
+A typical nonlinear model may look like this:
 
 ```text
-Q
-↓
-RSCH
-↓
-REQ
-↓
-DES
-↓
-ADR
-↓
-SPEC
+USE ↔ Q
+ \    /
+  RSCH
+    ↓
+   REQ
+    ↓
+   DES
+    ↓
+   ADR
+    ↓
+   SPEC
 ```
 
-This path is not a mandatory linear sequence.
+This diagram is not a mandatory linear sequence. Other traceable paths and many-to-many relationships are permitted.
 
 One research document may produce several requirements. One requirement may rely on several research documents. One architectural decision may resolve several design proposals. Correcting an obvious error may not require a separate research document.
 
@@ -88,7 +89,38 @@ Allowed statuses:
 
 A closed question is not removed.
 
-## 3. Research — `RSCH`
+## 3. Use cases — `USE`
+
+`USE` is an informative artifact describing actors/systems, context, problem/need, expected outcome, boundaries, assumptions, and relationships with other project artifacts.
+
+`USE` does not define architecture and is not a normative requirement, research evidence, or a promise to include a feature in a particular standard version.
+
+Identifiers use the format `USE-0001`, `USE-0002`, and so on. They are global within the `USE` class, language- and path-independent, immutable, and never reused.
+
+`USE` statuses are:
+
+- `DRAFT`;
+- `REVIEW`;
+- `COMPLETE`;
+- `WITHDRAWN`;
+- `SUPERSEDED`.
+
+`Status` describes card maturity. `COMPLETE` means the description is sufficiently complete; it does not mean `ACCEPTED` or a commitment to support the use case.
+
+The `REVIEW` stage is optional. An editorial change may preserve `COMPLETE`; a substantive change to the same scenario returns the card to `REVIEW`; an effectively new scenario receives a new ID and the old card becomes `SUPERSEDED`. `WITHDRAWN` closes an incomplete card without replacing it.
+
+A separate `Disposition` field describes the project's position toward the use case:
+
+- `CANDIDATE`;
+- `TARGET`;
+- `NON-TARGET`;
+- `DEFERRED`.
+
+`TARGET` does not automatically turn the use case or its mentioned features into a `REQ`, v0.1 scope, or normative text.
+
+The process and lifecycle are defined by PREP-08. The current Russian index is at `docs/ru/use-cases/README.md`, and the Russian template is at `docs/ru/templates/USE-template.md`.
+
+## 4. Research — `RSCH`
 
 `RSCH` answers the question:
 
@@ -117,7 +149,7 @@ Research must:
 
 A research document may recommend an alternative, but it cannot declare that alternative to be an IMXO architectural decision.
 
-## 4. Requirements — `REQ`
+## 5. Requirements — `REQ`
 
 `REQ` answers the question:
 
@@ -150,7 +182,7 @@ They are grouped into thematic documents, while each individual requirement rece
 
 A requirement identifier must not encode a thematic category. The category is stored separately as metadata.
 
-## 5. Design — `DES`
+## 6. Design — `DES`
 
 `DES` answers the question:
 
@@ -179,7 +211,7 @@ A `DES` document may include:
 
 The selected alternative is recorded in a separate `ADR`.
 
-## 6. Architectural decisions — `ADR`
+## 7. Architectural decisions — `ADR`
 
 `ADR` answers the question:
 
@@ -219,7 +251,7 @@ Typical subjects that require an ADR include:
 
 An ADR is not required for minor editorial changes.
 
-## 7. Revising decisions
+## 8. Revising decisions
 
 An accepted decision may be reconsidered.
 
@@ -245,7 +277,7 @@ Documents with `REJECTED`, `WITHDRAWN`, and `SUPERSEDED` status remain in the pr
 
 Document identifiers are never reused.
 
-## 8. Normative text — `SPEC`
+## 9. Normative text — `SPEC`
 
 `SPEC` contains the normative outcome of accepted requirements and architectural decisions.
 
@@ -257,12 +289,13 @@ Important:
 
 > An `ACCEPTED` ADR is not the same as a published normative version of the standard.
 
-## 9. Identifiers
+## 10. Identifiers
 
 Global sequential identifiers are used within each class:
 
 ```text
 Q-0001
+USE-0001
 RSCH-0001
 REQ-0001
 DES-0001
@@ -287,7 +320,7 @@ Identifiers:
 
 The thematic area is stored separately.
 
-## 10. Filenames
+## 11. Filenames
 
 Standalone documents use the following pattern:
 
@@ -304,6 +337,12 @@ Q-0001-container-architecture.md
 Q-0002-physical-file-structure.md
 ```
 
+Use-case cards use the following pattern:
+
+```text
+docs/ru/use-cases/USE-0001-example-slug.md
+```
+
 An ADR normally records one material decision in one file.
 
 An RSCH document normally covers one standalone research subject or research question.
@@ -312,13 +351,16 @@ DES is used for one major design question or a related group of alternatives.
 
 REQ entries are grouped into thematic documents rather than stored as one file per requirement.
 
-## 11. Traceability
+## 12. Traceability
 
 The project must make it possible to trace a material requirement or normative decision to its origin without archaeology through Git history.
 
 Documents may include links such as:
 
 ```text
+Related use cases:
+- USE-0003
+
 Related questions:
 - Q-0003
 
@@ -337,11 +379,19 @@ Specified in:
 - SPEC § ...
 ```
 
-Not every field is required in every document.
+The logical register model is:
 
-## 12. GitHub Issues and Discussions
+```text
+Requirement | Use cases | Questions | Research | Design | Decision | Specification
+```
 
-After PREP-05 is closed, a GitHub Issue is the standard entry point for a new material question, proposal, or process change.
+Relationships are many-to-many. Not every field is required in every document, and a related `USE` is not required for every `REQ`.
+
+## 13. GitHub Issues and Discussions
+
+GitHub Issues are the primary public entry point for external proposals, material feedback, contributor questions, public discussion, and coordination of significant Pull Requests.
+
+An Issue is created when a separate public discussion point provides independent value. At the current founder-led stage, the Project Lead may directly create or change a `Q`, `USE`, research plan, PREP amendment, or other process artifact when an Issue would only duplicate work already discussed and being documented.
 
 An Issue by itself:
 
@@ -353,6 +403,7 @@ An Issue by itself:
 After initial review, a material Issue may be formalized as one or more project artifacts:
 
 - `Q`;
+- `USE`;
 - `RSCH`;
 - `REQ`;
 - `DES`;
@@ -362,9 +413,19 @@ The existing `Q-0001…Q-0012` questions were transferred from PREP-00 and do no
 
 GitHub Discussions may be used for external or preliminary discussion, but they are not an architectural decision source by themselves.
 
-A change to PREP-05 after its closure must begin with a GitHub Issue and proceed through a normal repository change that preserves history.
+A change to PREP-05 after its closure proceeds through a normal repository change that preserves history. A separate Issue is used when it helps public discussion or coordination, not as a mandatory ritual step.
 
-## 13. Decision authority
+## 14. Research plan
+
+The future `docs/ru/project/research-plan.md` is a single living project-management document for research order, priorities, dependencies, and queue state.
+
+It is not a separate artifact class, evidence, a research result, or a technical basis for `REQ`, `ADR`, or `SPEC`. The `PLAN-*` class and identifiers are not introduced.
+
+The plan does not reserve `RSCH` identifiers: a number is assigned only when an actual research document is created.
+
+PREP-08 defines the role of this path but does not create the initial research plan.
+
+## 15. Decision authority
 
 `ACCEPTED` status is assigned according to the current IMXO governance model.
 
@@ -372,7 +433,7 @@ At the current stage, final architectural decisions are recorded by the project 
 
 A future working group or technical committee may use the same document system without changing identifiers or history.
 
-## 14. Research completion criteria
+## 16. Research completion criteria
 
 An `RSCH` document may be moved to `COMPLETE` when:
 
@@ -387,7 +448,7 @@ An `RSCH` document may be moved to `COMPLETE` when:
 
 Absolute research completeness is not required.
 
-## 15. Relationship to PREP-00
+## 17. Relationship to PREP-00
 
 PREP-00 remains the project's historical baseline checkpoint.
 
@@ -395,7 +456,7 @@ Open questions from PREP-00 have been transferred to the living registry and sep
 
 PREP-00 is not rewritten merely to change the current status of those questions.
 
-## 16. Relationship to PREP-06
+## 18. Relationship to PREP-06
 
 PREP-05 defines:
 
@@ -404,11 +465,15 @@ PREP-05 defines:
 - the open-question registry and cards;
 - traceability;
 - revision of decisions;
-- the role of Issues as the entry point after process preparation is complete.
+- the role of Issues as a public entry point and coordination tool.
 
 PREP-06 will separately define the rules for writing and structuring the normative standard.
 
-## 17. PREP-05 outcome
+## 19. Relationship to PREP-08
+
+PREP-08 adds `USE`, its lifecycle and `Disposition`, the nonlinear traceability model, and the role of `research-plan.md`. The amendment clarifies the role of GitHub Issues, does not change the status of PREP-05, and does not begin research.
+
+## 20. PREP-05 outcome
 
 PREP-05 is complete.
 
@@ -417,10 +482,13 @@ The project has:
 - a formal decision process;
 - a living index of open questions;
 - separate cards for material questions;
+- the informative `USE` class, its template, and the Russian index;
 - a permanent identifier system;
-- `Q`, `RSCH`, `DES`, and `ADR` templates;
+- `Q`, `USE`, `RSCH`, `DES`, and `ADR` templates;
 - rules for forming and tracing `REQ` entries;
+- nonlinear many-to-many traceability among `USE / Q / RSCH / REQ / DES / ADR / SPEC`;
+- a defined role for the future `research-plan.md` without a `PLAN-*` class;
 - rules for revising decisions;
-- a defined role for GitHub Issues in subsequent changes.
+- a defined role for GitHub Issues as a public entry point and coordination tool, rather than a mandatory predecessor to every artifact.
 
 Further process changes follow the normal project change process and do not return PREP-05 to an unfinished preparatory state.

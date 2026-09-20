@@ -66,7 +66,7 @@ The decision between a custom IMXO container, a profile built on an existing con
 
 ## Current project state
 
-The **PREP** preparation cycle is complete. IMXO remains in the research and early-design stage.
+The initial **PREP-00 through PREP-07** preparation baseline was completed. **PREP-08** was added as a targeted process amendment before systematic research began. IMXO remains in the research and early-design stage.
 
 Completed:
 
@@ -77,12 +77,13 @@ Completed:
 - mixed licensing model and license texts;
 - Brand Policy;
 - contribution and security infrastructure;
-- preparation stages **PREP-00 through PREP-07**;
+- initial preparation baseline **PREP-00 through PREP-07**;
+- targeted **PREP-08** process amendment introducing the informative `USE` artifact class and research-planning rules;
 - published project [`GOVERNANCE.md`](GOVERNANCE.md) and [`IPR_POLICY.md`](IPR_POLICY.md).
 
 Next:
 
-The next step is to approve a systematic research plan and then begin technical work through the project's `RSCH` process.
+The next steps are to create the first real use-case cards, prepare the initial systematic research plan, and only then begin technical work through the project's `RSCH` process.
 
 The container architecture, logical object model, and normative specification remain open and have not been finalized by completion of the PREP cycle.
 
@@ -91,6 +92,8 @@ The container architecture, logical object model, and normative specification re
 The base repository structure has been established. Additional directories and sections will be added as the corresponding research, requirements, design decisions, specification, examples, schemas, and implementation materials emerge.
 
 Documentation indexes: [English](docs/en/README.md) and [Russian](docs/ru/README.md).
+
+Informative `USE` cards describe application scenarios without creating requirements or architecture. They are developed in Russian first; an English mirror becomes mandatory when a card reaches `COMPLETE`. The current working index is the [Russian use-case index](docs/ru/use-cases/README.md).
 
 Reference implementations, SDKs, tools, and test suites may later remain in this repository or move into separate repositories under the IMXO organization depending on their lifecycle and scope.
 
