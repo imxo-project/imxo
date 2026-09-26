@@ -303,17 +303,104 @@ Primary fields:
 - In scope;
 - Out of scope;
 - Inputs, when applicable;
+- Operational profile;
+- Longevity and verification expectations;
 - Expected outcome;
 - Success conditions;
+- Failure and representation-divergence impact;
+- Adversarial / misuse incentives;
+- Structured-data exposure and data minimization;
 - Current workflow and known limitations;
 - Assumptions / hypotheses;
 - Relevance to IMXO;
 - Cross-cutting considerations;
 - Open questions;
 - Related artifacts;
+- Supersession, when applicable;
 - History.
 
-Sections need not contain text when objectively inapplicable. Empty formal sections must not be created merely to satisfy the template.
+The characteristics below do not require exact figures or final answers. Explicit values such as `unknown`, `to be researched`, `estimated`, `range`, `not applicable`, or unambiguous equivalents are acceptable.
+
+### 12.1. Operational profile
+
+When relevant, the card describes:
+
+- frequency / event rate;
+- typical volume;
+- peak or burst characteristics;
+- interactive or batch nature;
+- the number and types of producers and consumers;
+- whether manual review is realistic;
+- sensitivity to processing/storage overhead.
+
+Global market or adoption scale must not be conflated with the operational characteristics of a specific scenario.
+
+### 12.2. Longevity and verification expectations
+
+The card distinguishes among:
+
+- expected useful lifetime;
+- expected retention period;
+- required provenance / integrity verification horizon;
+- whether offline or self-contained verification may be needed;
+- whether dependence on external services may be acceptable.
+
+This section records scenario expectations without selecting a cryptographic, PKI, or archival architecture.
+
+### 12.3. Failure and representation-divergence impact
+
+The card considers what happens when structured data is wrong, stale, corrupted, or inconsistent with the visible representation. When relevant, it identifies:
+
+- who or what consumes the incorrect data;
+- whether the error can trigger automated action;
+- whether a human would notice the mismatch;
+- whether the consequences are reversible and how material the harm may be;
+- which representations or layers may diverge.
+
+Such divergence does not require an adversary.
+
+### 12.4. Adversarial / misuse incentives
+
+The card considers:
+
+- whether anyone benefits from false or inconsistent data, and who;
+- what they would benefit from falsifying;
+- which representation or layer is the target;
+- who or what is intended to be misled;
+- what downstream effect may result.
+
+Subjective threat or risk levels are not introduced before a separate model is accepted.
+
+### 12.5. Structured-data exposure and data minimization
+
+The card accounts for structured data potentially amplifying disclosure because it becomes machine-readable, searchable, indexable, copyable, easier for AI or agents to ingest, and easier to extract in bulk. When relevant, it considers:
+
+- what sensitive data may enter a structured layer and whether it was visible in the pixels;
+- whether structured data may contain information that was not visually shown to the user;
+- whether sensitive data can be excluded at capture time and whether the source application can help exclude sensitive fields;
+- whether data can be safely removed after capture;
+- which related representations must change during redaction or sanitization;
+- indexing/search and AI/agent ingestion risks.
+
+Cards must consider the risk class in which a visually hidden value remains exposed in the structured representation, for example:
+
+```text
+visible representation:
+Password: ••••••••
+
+structured representation:
+Password: real-secret-value
+```
+
+This section does not select a specific protection mechanism.
+
+### 12.6. Splitting use cases
+
+When two superficially similar scenarios differ materially in operational profile, lifetime, verification horizon, failure impact, adversarial incentives, or privacy / structured-data exposure, and those differences may produce materially different requirements, separate `USE` cards are preferred.
+
+For example, `Interactive screenshot for a human user` and `Screenshot consumed by an autonomous AI agent` may be separate use cases. This example does not create those cards.
+
+Other sections need not contain text when objectively inapplicable. Empty formal sections must not be created merely to satisfy the template.
 
 ## 13. Solution neutrality
 
@@ -374,11 +461,18 @@ A `USE` may move to `COMPLETE` when:
 - the scenario goal is clear;
 - its primary boundaries are defined;
 - the expected outcome is described;
+- material operational characteristics are described or given an explicit unknown or inapplicable status;
+- material lifetime and verification expectations are described or given an explicit unknown or inapplicable status;
+- material failure and representation-divergence impacts are described or given an explicit unknown or inapplicable status;
+- material adversarial or misuse incentives are described or given an explicit unknown or inapplicable status;
+- material structured-data exposure and data-minimization characteristics are described or given an explicit unknown or inapplicable status;
 - assumptions and hypotheses are not presented as facts;
 - material open questions are listed;
 - no hidden architectural decision is embedded in the scenario;
 - existing related artifacts are identified, when any exist;
 - `Disposition` is set.
+
+`COMPLETE` does not require every unknown to have already been researched. Unknowns must be visible as `unknown`, `to be researched`, `not applicable`, or another unambiguous status instead of being hidden assumptions.
 
 ## 17. USE language process
 

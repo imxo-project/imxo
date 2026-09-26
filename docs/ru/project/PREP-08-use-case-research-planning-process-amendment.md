@@ -323,17 +323,104 @@ Use-case success conditions описывают желаемый результа
 - In scope;
 - Out of scope;
 - Inputs, если применимо;
+- Operational profile;
+- Longevity and verification expectations;
 - Expected outcome;
 - Success conditions;
+- Failure and representation-divergence impact;
+- Adversarial / misuse incentives;
+- Structured-data exposure and data minimization;
 - Current workflow and known limitations;
 - Assumptions / hypotheses;
 - Relevance to IMXO;
 - Cross-cutting considerations;
 - Open questions;
 - Related artifacts;
+- Supersession, если применимо;
 - History.
 
-Не все подразделы обязаны содержать текст, если они объективно неприменимы.
+Для характеристик, перечисленных ниже, точные числа и окончательные ответы не требуются. Допустимы явные значения `unknown`, `to be researched`, `estimated`, `range`, `not applicable` или их однозначные эквиваленты.
+
+### 12.1. Operational profile
+
+Когда это релевантно, карточка описывает:
+
+- frequency / event rate;
+- typical volume;
+- peak or burst characteristics;
+- interactive or batch nature;
+- число и типы producers и consumers;
+- реалистичность ручной проверки;
+- чувствительность к processing/storage overhead.
+
+Глобальный масштаб рынка или adoption не должен смешиваться с operational characteristics конкретного сценария.
+
+### 12.2. Longevity and verification expectations
+
+Карточка различает:
+
+- expected useful lifetime;
+- expected retention period;
+- требуемый горизонт проверки provenance / integrity;
+- возможную потребность в offline или self-contained verification;
+- допустимость зависимости от внешних сервисов.
+
+Этот раздел фиксирует ожидания сценария, но не выбирает cryptographic, PKI или archival architecture.
+
+### 12.3. Failure and representation-divergence impact
+
+Карточка рассматривает последствия, если structured data неверны, устарели, повреждены или расходятся с visible representation. Когда релевантно, она указывает:
+
+- кто или какая система использует неверные данные;
+- может ли ошибка вызвать автоматическое действие;
+- заметит ли человек расхождение;
+- обратимы ли последствия и насколько существенен возможный ущерб;
+- какие representations или layers могут расходиться.
+
+Для такого расхождения не требуется наличие злоумышленника.
+
+### 12.4. Adversarial / misuse incentives
+
+Карточка рассматривает:
+
+- есть ли сторона, получающая выгоду от ложных или несогласованных данных, и кто это;
+- что именно ей выгодно подделать;
+- какое representation или layer является целью;
+- кого или какую систему предполагается ввести в заблуждение;
+- какой downstream effect возможен.
+
+До принятия отдельной модели субъективные классы уровня угрозы или риска не вводятся.
+
+### 12.5. Structured-data exposure and data minimization
+
+Карточка учитывает, что structured data могут усиливать утечку, поскольку становятся machine-readable, searchable, indexable, copyable, удобнее для AI/agent ingestion и массового извлечения. Когда релевантно, она рассматривает:
+
+- какие sensitive data могут попасть в structured layer и были ли они видимы в pixels;
+- могут ли structured data содержать информацию, которая визуально пользователю не показывалась;
+- можно ли исключить sensitive data во время capture и может ли source application помочь исключить sensitive fields;
+- можно ли безопасно удалить данные после capture;
+- какие связанные representations должны измениться при redaction / sanitization;
+- риски indexing / search и AI/agent ingestion.
+
+Обязательно рассматривается класс риска, при котором скрытое визуально значение остаётся раскрытым в structured representation, например:
+
+```text
+visible representation:
+Password: ••••••••
+
+structured representation:
+Password: real-secret-value
+```
+
+Этот раздел не выбирает конкретный механизм защиты.
+
+### 12.6. Разделение сценариев
+
+Если два внешне похожих сценария существенно различаются по operational profile, lifetime, verification horizon, failure impact, adversarial incentives или privacy / structured-data exposure и эти различия способны привести к существенно разным требованиям, предпочтительны отдельные карточки `USE`.
+
+Например, `Interactive screenshot for a human user` и `Screenshot consumed by an autonomous AI agent` могут быть самостоятельными сценариями. Этот пример не создаёт соответствующие карточки.
+
+Не все остальные подразделы обязаны содержать текст, если они объективно неприменимы.
 
 Пустые формальные разделы не должны создаваться только ради шаблона.
 
@@ -396,11 +483,18 @@ IMXO должен иметь TEXT chunk с UTF-8 payload.
 - понятна цель сценария;
 - определены основные границы;
 - описан ожидаемый результат;
+- существенные operational characteristics описаны или получили явный статус неизвестности либо неприменимости;
+- существенные lifetime и verification expectations описаны или получили явный статус неизвестности либо неприменимости;
+- существенные последствия failure и representation divergence описаны или получили явный статус неизвестности либо неприменимости;
+- существенные adversarial / misuse incentives описаны или получили явный статус неизвестности либо неприменимости;
+- существенные structured-data exposure и data-minimization характеристики описаны или получили явный статус неизвестности либо неприменимости;
 - assumptions/hypotheses не выдаются за факты;
 - перечислены существенные открытые вопросы;
 - скрытое архитектурное решение не встроено в сценарий;
 - существующие связанные артефакты указаны, если они есть;
 - установлен `Disposition`.
+
+Для `COMPLETE` не требуется предварительно исследовать все неизвестности. Они должны быть видимы как `unknown`, `to be researched`, `not applicable` или иной однозначный статус, а не скрыты в предположениях.
 
 ## 17. Языковой процесс USE
 

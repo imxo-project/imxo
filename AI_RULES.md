@@ -96,6 +96,10 @@ Follow `docs/ru/project/PREP-06-specification-writing-rules.md` when preparing f
 6. Do not reserve `RSCH` identifiers in `research-plan.md`; assign an identifier only when an actual `RSCH` is created.
 7. Follow PREP-08 for the `USE` lifecycle, disposition, language workflow, and traceability.
 8. Do not create `USE-0001`, an initial research plan, or an `RSCH` as part of PREP-08 implementation.
+9. Do not assume structured data is safer than pixels.
+10. Do not assume machine-readable text inherits the privacy properties of the visible image; explicitly consider data that may exist in structured layers but not in visible pixels.
+11. Do not merge use cases when differences in scale, lifetime, verification horizon, or risk materially change the likely requirements.
+12. Do not convert redaction, sanitization, or verification observations directly into normative requirements outside the normal `Q / RSCH / REQ` process.
 
 ## External standards and sources
 

@@ -5,7 +5,7 @@ IMXO documentation is organized by purpose so that research, requirements, desig
 ## Document classes
 
 - `project/` — project preparation, baseline documents, rules, and plans;
-- `use-cases/` — informative `USE` application scenarios; the English directory is created with the first English card;
+- `use-cases/` — informative `USE` application scenarios and their index;
 - `research/` — research into existing standards, containers, and technologies;
 - `requirements/` — IMXO requirements;
 - `design/` — design work performed before a final decision is accepted;
@@ -40,11 +40,11 @@ Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, an
 - [`templates/SPEC-section-template.md`](templates/SPEC-section-template.md) — future normative specification section template;
 - [`templates/TRACEABILITY-register-template.md`](templates/TRACEABILITY-register-template.md) — separate informative bidirectional traceability register template.
 
-`USE` cards are informative Russian-first working artifacts. An English mirror becomes mandatory when a card reaches `COMPLETE`; before then it may be created for external review or collaboration. Until the first English card exists, use the [current Russian working index](../ru/use-cases/README.md). No empty English use-case directory is maintained.
+`USE` cards are informative Russian-first working artifacts. An English mirror becomes mandatory when a card reaches `COMPLETE`; before then it may be created for external review or collaboration. The current English navigation is the [`use-cases/README.md`](use-cases/README.md) index.
 
 Official project policies: [`GOVERNANCE.md`](../../GOVERNANCE.md) and [`IPR_POLICY.md`](../../IPR_POLICY.md). They are published only in English.
 
-The initial `PREP-00` through `PREP-07` preparation baseline was completed. `PREP-08` was added as a targeted process amendment before systematic research began. The next steps are the first real `USE` cards, the initial `research-plan.md`, and then `RSCH` work.
+The initial `PREP-00` through `PREP-07` preparation baseline was completed. `PREP-08` was added as a targeted process amendment before systematic research began. `USE-0001` is the first real use-case card and has synchronized Russian and English versions. The next steps are expansion of the initial `USE` set, the initial `research-plan.md`, and then `RSCH` work.
 
 Russian documentation is available under [`../ru/`](../ru/README.md).
 

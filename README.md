@@ -79,11 +79,12 @@ Completed:
 - contribution and security infrastructure;
 - initial preparation baseline **PREP-00 through PREP-07**;
 - targeted **PREP-08** process amendment introducing the informative `USE` artifact class and research-planning rules;
+- first real use-case card, `USE-0001`, in synchronized Russian and English versions;
 - published project [`GOVERNANCE.md`](GOVERNANCE.md) and [`IPR_POLICY.md`](IPR_POLICY.md).
 
 Next:
 
-The next steps are to create the first real use-case cards, prepare the initial systematic research plan, and only then begin technical work through the project's `RSCH` process.
+The next steps are to expand the initial use-case set, prepare the initial systematic research plan, and only then begin technical work through the project's `RSCH` process.
 
 The container architecture, logical object model, and normative specification remain open and have not been finalized by completion of the PREP cycle.
 
@@ -93,7 +94,7 @@ The base repository structure has been established. Additional directories and s
 
 Documentation indexes: [English](docs/en/README.md) and [Russian](docs/ru/README.md).
 
-Informative `USE` cards describe application scenarios without creating requirements or architecture. They are developed in Russian first; an English mirror becomes mandatory when a card reaches `COMPLETE`. The current working index is the [Russian use-case index](docs/ru/use-cases/README.md).
+Informative `USE` cards describe application scenarios without creating requirements or architecture. They are developed in Russian first; an English mirror becomes mandatory when a card reaches `COMPLETE`. See the [English use-case index](docs/en/use-cases/README.md) or the [Russian use-case index](docs/ru/use-cases/README.md).
 
 Reference implementations, SDKs, tools, and test suites may later remain in this repository or move into separate repositories under the IMXO organization depending on their lifecycle and scope.
 
