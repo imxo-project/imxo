@@ -79,7 +79,7 @@ Completed:
 - contribution and security infrastructure;
 - initial preparation baseline **PREP-00 through PREP-07**;
 - targeted **PREP-08** process amendment introducing the informative `USE` artifact class and research-planning rules;
-- first real use-case card, `USE-0001`, in synchronized Russian and English versions;
+- first two real use-case cards, `USE-0001` and `USE-0002`, in synchronized Russian and English versions;
 - published project [`GOVERNANCE.md`](GOVERNANCE.md) and [`IPR_POLICY.md`](IPR_POLICY.md).
 
 Next:

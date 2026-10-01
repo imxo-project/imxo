@@ -32,7 +32,9 @@ The presence of programmatically available text or an embedded description must 
 - provenance and trust for accessibility data;
 - relationships with text and semantic layers;
 - interaction with the text model and text fallback strategy;
-- whether an accessibility profile would be useful.
+- whether an accessibility profile would be useful;
+- accessibility data as a related representation that may require update or removal together with visual content;
+- preventing a removed visual value from remaining in programmatically available text, a description, reading order, or other accessibility data.
 
 ## Related questions
 
@@ -48,7 +50,7 @@ None yet.
 
 ## Related design documents
 
-None yet.
+- [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
 
@@ -58,3 +60,4 @@ Not resolved.
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
 - 2026-09-20 — scope expanded to cover external data exposure, trust, contextual alternatives, and the relationship with Q-0013; status remains `OPEN`.
+- 2026-10-01 — scope expanded with updates to related accessibility data during sanitization from USE-0002; status remains `OPEN`.

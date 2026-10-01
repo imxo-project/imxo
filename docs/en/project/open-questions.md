@@ -2,7 +2,7 @@
 
 This document is a living index of material project questions that have not yet received a final resolution.
 
-The initial `Q-0001…Q-0012` questions were transferred from `PREP-00`. PREP-00 remains a historical checkpoint, while the current state of the questions is tracked here and in their individual cards. Question `Q-0013` was added following PREP-07.
+The initial `Q-0001…Q-0012` questions were transferred from `PREP-00`. PREP-00 remains a historical checkpoint, while the current state of the questions is tracked here and in their individual cards. Question `Q-0013` was added following PREP-07. Question `Q-0014` was created from the development of `USE-0002`.
 
 ## Rules
 
@@ -29,9 +29,10 @@ The initial `Q-0001…Q-0012` questions were transferred from `PREP-00`. PREP-00
 | [Q-0011](questions/Q-0011-sdk-integrations.md) | SDKs and integrations | `OPEN` | Implementation |
 | [Q-0012](questions/Q-0012-conformance-model.md) | Conformance model | `OPEN` | Conformance |
 | [Q-0013](questions/Q-0013-accessibility-regulatory-adoption.md) | Accessibility standards, regulatory mapping, and adoption | `OPEN` | Accessibility / Adoption / Standards mapping |
+| [Q-0014](questions/Q-0014-safe-editing-cascade-operations.md) | Safe modification, dependencies, and cascade operations | `OPEN` | Editing / Safety |
 
 ## Adding new questions
 
-The next available identifier is `Q-0014`.
+The next available identifier is `Q-0015`.
 
 An external material question, or one needing public coordination, is normally submitted through a GitHub Issue first. After the maintainer decides to include it in the formal process, a card is created from `Q-template.md`, the next permanent `Q-xxxx` identifier is assigned, and this index is updated. The Project Lead may create a card directly when an Issue would only duplicate work already discussed and being documented.

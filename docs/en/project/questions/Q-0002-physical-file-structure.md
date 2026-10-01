@@ -22,7 +22,11 @@ PREP-00 deliberately leaves the binary structure undefined until container alter
 - nesting, footer, primary index, and backup index;
 - recovery sync marker, padding, and alignment;
 - handling of damaged data;
-- preservation of unknown blocks.
+- preservation of unknown blocks;
+- removal of data from obsolete blocks, residual structures, indexes, free areas, and padding when the selected physical model contains such elements;
+- safe production of the final file and behavior when an operation is interrupted;
+- conflict between preserving unknown blocks and guaranteeing removal of related data;
+- conditions under which a local update is sufficient or another method of producing a sanitized result is required, without preselecting mandatory full rebuilding.
 
 ## Related research
 
@@ -34,7 +38,7 @@ None yet.
 
 ## Related design documents
 
-None yet.
+- [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
 
@@ -43,3 +47,4 @@ Not resolved.
 ## History
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
+- 2026-10-01 — scope expanded with physical sanitization implications from USE-0002; status remains `OPEN`.

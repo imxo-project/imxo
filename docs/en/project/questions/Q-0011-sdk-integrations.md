@@ -21,7 +21,11 @@ PREP-00 makes no final decisions about SDKs and integrations. These questions wi
 - Photoshop, GIMP, and Krita;
 - system image viewers;
 - viewer/editor integration;
-- capture tools.
+- capture tools;
+- high-level safe modification and removal operations without prematurely assigning specific APIs;
+- handling related changes and removals and verifying the final state;
+- enabling correct implementation without requiring every application to traverse internal container structures manually;
+- behavior with partially supported extensions and production of a state suitable for export.
 
 ## Related research
 
@@ -33,7 +37,7 @@ None yet.
 
 ## Related design documents
 
-None yet.
+- [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
 
@@ -42,3 +46,4 @@ Not resolved.
 ## History
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
+- 2026-10-01 — scope expanded with library operations for safe modification from USE-0002; status remains `OPEN`.

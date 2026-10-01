@@ -45,6 +45,8 @@ Neither state automatically creates normative requirements.
 | ID | Name | Status | Disposition | Summary |
 |---|---|---|---|---|
 | [`USE-0001`](USE-0001-structured-screenshot-content.md) | [Screenshot Preserving Structured User Content](USE-0001-structured-screenshot-content.md) | `REVIEW` | `CANDIDATE` | Preserves the visual screenshot together with safe, spatially associated text and user-relevant semantics without turning the file into a dump of application state. |
+| [`USE-0002`](USE-0002-safe-sanitization.md) | [Safe Sanitization of a Structured Image](USE-0002-safe-sanitization.md) | `REVIEW` | `CANDIDATE` | Removes selected content together with reliably known dependent and derived representations without incorrectly removing independent data. |
+
 
 ## Planned use cases
 
@@ -52,7 +54,6 @@ The entries below are only a working roadmap. These cards have not yet been crea
 
 | Working number | Working title | Why it is needed |
 |---|---|---|
-| `USE-0002` | Safe concealment and removal of data in a structured image | Explore cascading removal or update of text, semantics, annotations, metadata, and alternative representations across the IMXO editing ecosystem, including future reusable mechanisms in official libraries without prohibiting independent implementations. |
 | `USE-0003` | Screenshot as input for an AI agent | Consider automated consumption of a structured screenshot, where representation divergence may influence actions and provenance, trust, and data conflicts become central. |
 | `USE-0004` | Image with computer-vision annotations | Describe human- or machine-created boxes, polygons, masks, labels, and other CV annotations, their provenance, relationships to common ecosystems, and continued validity after image editing. |
 | `USE-0005` | Long-lived scientific, museum, or archival image | Consider long retention, preservation, migration, offline or self-contained use, provenance, and verification horizons without unnecessary dependence on external services. |

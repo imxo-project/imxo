@@ -29,6 +29,8 @@
 - [`project/PREP-06-specification-writing-rules.md`](project/PREP-06-specification-writing-rules.md) — завершённые правила подготовки будущей нормативной спецификации;
 - [`project/PREP-07-licensing-governance.md`](project/PREP-07-licensing-governance.md) — завершённое подготовительное решение по лицензированию, управлению проектом и IPR;
 - [`project/PREP-08-use-case-research-planning-process-amendment.md`](project/PREP-08-use-case-research-planning-process-amendment.md) — целевая процессная поправка о сценариях применения и планировании исследований;
+- [`use-cases/USE-0001-structured-screenshot-content.md`](use-cases/USE-0001-structured-screenshot-content.md) — снимок экрана с сохранением структурированного пользовательского содержания;
+- [`use-cases/USE-0002-safe-sanitization.md`](use-cases/USE-0002-safe-sanitization.md) — безопасная санитизация структурированного изображения;
 - [`project/open-questions.md`](project/open-questions.md) — живой индекс открытых вопросов;
 - [`project/questions/`](project/questions/) — отдельные карточки существенных вопросов;
 - [`project/questions/Q-0013-accessibility-regulatory-adoption.md`](project/questions/Q-0013-accessibility-regulatory-adoption.md) — открытый вопрос о стандартах доступности, нормативном сопоставлении и принятии формата;
@@ -44,7 +46,7 @@
 
 Официальные политики проекта: [`GOVERNANCE.md`](../../GOVERNANCE.md) и [`IPR_POLICY.md`](../../IPR_POLICY.md). Они публикуются только на английском языке.
 
-Первоначальная подготовительная база `PREP-00…PREP-07` была завершена. `PREP-08` добавлен как целевая процессная поправка до начала систематических исследований. `USE-0001` является первой реальной карточкой сценария и имеет синхронизированные русскую и английскую версии. Следующие шаги — расширение первоначального набора `USE`, первоначальный `research-plan.md` и затем работы класса `RSCH`.
+Первоначальная подготовительная база `PREP-00…PREP-07` была завершена. `PREP-08` добавлен как целевая процессная поправка до начала систематических исследований. `USE-0001` и `USE-0002` опубликованы в синхронизированных русской и английской версиях со статусом `REVIEW` и назначением `CANDIDATE`. Следующие шаги — дальнейшее расширение первоначального набора `USE`, первоначальный `research-plan.md` и затем работы класса `RSCH`.
 
 Английская документация находится в [`../en/`](../en/README.md).
 

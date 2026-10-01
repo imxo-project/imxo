@@ -29,6 +29,8 @@ Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, an
 - [`project/PREP-06-specification-writing-rules.md`](project/PREP-06-specification-writing-rules.md) — completed writing rules for the future normative specification;
 - [`project/PREP-07-licensing-governance.md`](project/PREP-07-licensing-governance.md) — completed preparation decision on licensing, project governance, and IPR;
 - [`project/PREP-08-use-case-research-planning-process-amendment.md`](project/PREP-08-use-case-research-planning-process-amendment.md) — targeted use-case and research-planning process amendment;
+- [`use-cases/USE-0001-structured-screenshot-content.md`](use-cases/USE-0001-structured-screenshot-content.md) — screenshot preserving structured user content;
+- [`use-cases/USE-0002-safe-sanitization.md`](use-cases/USE-0002-safe-sanitization.md) — safe sanitization of a structured image;
 - [`project/open-questions.md`](project/open-questions.md) — living index of open questions;
 - [`project/questions/`](project/questions/) — individual cards for material questions;
 - [`project/questions/Q-0013-accessibility-regulatory-adoption.md`](project/questions/Q-0013-accessibility-regulatory-adoption.md) — open question on accessibility standards, regulatory mapping, and adoption;
@@ -44,7 +46,7 @@ Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, an
 
 Official project policies: [`GOVERNANCE.md`](../../GOVERNANCE.md) and [`IPR_POLICY.md`](../../IPR_POLICY.md). They are published only in English.
 
-The initial `PREP-00` through `PREP-07` preparation baseline was completed. `PREP-08` was added as a targeted process amendment before systematic research began. `USE-0001` is the first real use-case card and has synchronized Russian and English versions. The next steps are expansion of the initial `USE` set, the initial `research-plan.md`, and then `RSCH` work.
+The initial `PREP-00` through `PREP-07` preparation baseline was completed. `PREP-08` was added as a targeted process amendment before systematic research began. `USE-0001` and `USE-0002` are published in synchronized Russian and English versions with `REVIEW` status and `CANDIDATE` disposition. The next steps are further expansion of the initial `USE` set, the initial `research-plan.md`, and then `RSCH` work.
 
 Russian documentation is available under [`../ru/`](../ru/README.md).
 

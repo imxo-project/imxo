@@ -18,7 +18,10 @@ The container strategy will define the foundation of the IMXO physical model. PR
 - a fully custom IMXO container;
 - a profile or layer built on an existing container;
 - a hybrid approach;
-- implications of each alternative for requirements and subsequent design work.
+- implications of each alternative for requirements and subsequent design work;
+- representation of dependent and derived data during sanitization;
+- handling of opaque and unknown embedded data;
+- ability to produce a safe final file without removed content.
 
 ## Related research
 
@@ -30,7 +33,7 @@ None yet.
 
 ## Related design documents
 
-None yet.
+- [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
 
@@ -39,3 +42,4 @@ Not resolved.
 ## History
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
+- 2026-10-01 — scope expanded with dependencies identified by USE-0002; status remains `OPEN`.
