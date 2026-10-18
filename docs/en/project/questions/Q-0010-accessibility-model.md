@@ -50,6 +50,7 @@ None yet.
 
 ## Related design documents
 
+- [USE-0003 — Structured Screenshot as Input to an AI System](../../use-cases/USE-0003-structured-screenshot-ai-input.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
@@ -57,6 +58,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-18 — link to USE-0003 added and later redirected to its English mirror; accessibility research remains unnumbered pending approval of the overall plan; status remains `OPEN`.
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
 - 2026-09-20 — scope expanded to cover external data exposure, trust, contextual alternatives, and the relationship with Q-0013; status remains `OPEN`.

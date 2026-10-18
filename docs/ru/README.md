@@ -31,6 +31,9 @@
 - [`project/PREP-08-use-case-research-planning-process-amendment.md`](project/PREP-08-use-case-research-planning-process-amendment.md) — целевая процессная поправка о сценариях применения и планировании исследований;
 - [`use-cases/USE-0001-structured-screenshot-content.md`](use-cases/USE-0001-structured-screenshot-content.md) — снимок экрана с сохранением структурированного пользовательского содержания;
 - [`use-cases/USE-0002-safe-sanitization.md`](use-cases/USE-0002-safe-sanitization.md) — безопасная санитизация структурированного изображения;
+- [`use-cases/USE-0003-structured-screenshot-ai-input.md`](use-cases/USE-0003-structured-screenshot-ai-input.md) — структурированный снимок экрана как вход для ИИ-системы;
+- [`project/research-plan.md`](project/research-plan.md) — DRAFT-план первоначальной очереди исследований;
+- [`research/README.md`](research/README.md) — реестр реально созданных карточек `RSCH`;
 - [`project/open-questions.md`](project/open-questions.md) — живой индекс открытых вопросов;
 - [`project/questions/`](project/questions/) — отдельные карточки существенных вопросов;
 - [`project/questions/Q-0013-accessibility-regulatory-adoption.md`](project/questions/Q-0013-accessibility-regulatory-adoption.md) — открытый вопрос о стандартах доступности, нормативном сопоставлении и принятии формата;
@@ -46,7 +49,7 @@
 
 Официальные политики проекта: [`GOVERNANCE.md`](../../GOVERNANCE.md) и [`IPR_POLICY.md`](../../IPR_POLICY.md). Они публикуются только на английском языке.
 
-Первоначальная подготовительная база `PREP-00…PREP-07` была завершена. `PREP-08` добавлен как целевая процессная поправка до начала систематических исследований. `USE-0001` и `USE-0002` опубликованы в синхронизированных русской и английской версиях со статусом `REVIEW` и назначением `CANDIDATE`. Следующие шаги — дальнейшее расширение первоначального набора `USE`, первоначальный `research-plan.md` и затем работы класса `RSCH`.
+Первоначальная подготовительная база `PREP-00…PREP-07` была завершена. `PREP-08` добавлен как целевая процессная поправка до начала систематических исследований. `USE-0001`, `USE-0002` и `USE-0003` опубликованы в синхронизированных русской и английской версиях со статусом `REVIEW` и назначением `CANDIDATE`. Созданы синхронизированные русская и английская версии DRAFT-плана и 12 стартовых карточек `RSCH`, ожидающие review Project Lead; содержательные исследования ещё не начаты.
 
 Английская документация находится в [`../en/`](../en/README.md).
 

@@ -79,12 +79,13 @@ Completed:
 - contribution and security infrastructure;
 - initial preparation baseline **PREP-00 through PREP-07**;
 - targeted **PREP-08** process amendment introducing the informative `USE` artifact class and research-planning rules;
-- first two real use-case cards, `USE-0001` and `USE-0002`, in synchronized Russian and English versions;
+- first three real use-case cards, `USE-0001` through `USE-0003`, in synchronized Russian and English versions;
+- bilingual initial DRAFT research-planning package, pending review;
 - published project [`GOVERNANCE.md`](GOVERNANCE.md) and [`IPR_POLICY.md`](IPR_POLICY.md).
 
 Next:
 
-The next steps are to expand the initial use-case set, prepare the initial systematic research plan, and only then begin technical work through the project's `RSCH` process.
+The next steps are to review the initial research plan and DRAFT `RSCH` cards, continue expanding the use-case set, and then begin approved substantive research.
 
 The container architecture, logical object model, and normative specification remain open and have not been finalized by completion of the PREP cycle.
 

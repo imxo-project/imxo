@@ -25,7 +25,7 @@ IMXO must allow text to be associated with an image and its regions, but the exa
 
 ## Related research
 
-Not assigned yet.
+- [RSCH-0003 — Text Layer Models](../../research/RSCH-0003-text-layer-models.md)
 
 ## Related requirements
 
@@ -40,5 +40,7 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.

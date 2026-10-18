@@ -470,7 +470,7 @@ Existing accessibility guidance separately emphasizes programmatically determina
 
 The presence of such information in a file does not, however, make the final product accessible by itself. A viewer must correctly expose the information through the platform accessibility interface.
 
-A detailed scenario for people with disabilities using IMXO is addressed separately in `USE-0007`.
+A detailed scenario for people with disabilities using IMXO is addressed separately in planned `USE-0008`.
 
 ## 39. Questions requiring research
 
@@ -492,11 +492,13 @@ These results should be documented in separate research materials rather than du
 
 ## 40. Related use cases
 
-`USE-0002` — Safe concealment and removal of data in a structured image. It addresses cascading removal of related information, handling of additional representations, and semantic validity of annotations after image modification in detail.
+`USE-0004` — Editing a Structured Image While Preserving Representation Consistency — is planned as a separate scenario for subsequent modification of an already created screenshot. Its card has not been published.
 
-`USE-0003` — Screenshot as input for an AI agent. It examines a situation in which structured information is used not only for search and copying but may directly influence automated decisions and actions.
+[USE-0002 — Safe Sanitization of a Structured Image](USE-0002-safe-sanitization.md). It addresses cascading removal of related information, handling of additional representations, and semantic validity of annotations after image modification in detail.
 
-`USE-0007` — Accessible structured image for an assistive-technology user. It addresses the use of text, regions, descriptions, roles, states, and computer-vision annotations for perceiving visual content.
+[`USE-0003 — Structured Screenshot as Input to an AI System`](USE-0003-structured-screenshot-ai-input.md). It examines a situation in which structured information is used not only for search and copying but may directly influence automated decisions and actions.
+
+`USE-0008` — Accessible structured image for an assistive-technology user. It addresses the use of text, regions, descriptions, roles, states, and computer-vision annotations for perceiving visual content.
 
 ## 41. Related project questions
 
@@ -586,3 +588,5 @@ Visibility boundaries, partial occlusion, password fields, text recognition, use
 Complete collection of hidden application state was considered and rejected for privacy and security reasons.
 
 Safe concealment and removal of data was separated into `USE-0002` because that task is substantially broader than initial capture and requires its own behavior model for editors and libraries.
+
+2026-10-18 — planned USE-0004 recorded among related scenarios, and the working number of the accessibility scenario shifted to USE-0008.

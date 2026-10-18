@@ -15,9 +15,15 @@ How should IMXO define the semantics of safe modification and removal operations
 
 The specific mechanism must not be selected inside an informative `USE`. This question connects operation semantics to the logical model in `Q-0003`, the physical model in `Q-0002`, SDKs in `Q-0011`, and the conformance model in `Q-0012`.
 
+Two operation classes are distinguished here. **Ordinary editing** changes visible and/or structured content without necessarily guaranteeing irreversible removal of the original content. **Sanitization** removes selected data and processes reliably known dependent and derived representations in accordance with `USE-0002`.
+
 ## Scope
 
 - the distinction among concealment (`hide`), replacement (`replace`), removal (`delete`), sanitization (`sanitize`), and cropping (`crop`);
+- moving and copying an entire object or part of one;
+- splitting and merging fragments, cropping, and overlapping;
+- recalculating geometry separately from reviewing semantic annotations and relationships;
+- partially supported operations, unknown dependencies, and behavior when consistency cannot be preserved;
 - the boundary of one logical operation;
 - traversal of known dependencies and cascading removal;
 - partially affected and fully contained dependent objects;
@@ -30,7 +36,9 @@ The specific mechanism must not be selected inside an informative `USE`. This qu
 - operation integrity under failure and verification of the result after modification;
 - the boundary among format, library, and application responsibilities.
 
-Q-0014 does not determine a specific reference format, dependency-graph structure, mandatory full file rebuild, particular library API, mandatory use of AI, particular transactional-write model, or built-in cryptography.
+Q-0014 does not determine a universal cascade algorithm, mandatory transformation history, mandatory retention of former pixels, a specific reference format, dependency-graph structure, mandatory full file rebuild, particular library API, mandatory use of AI, particular transactional-write model, or built-in cryptography.
+
+Planned `USE-0004` will separately examine ordinary editing of a structured image; this question card neither replaces that scenario nor decides it in advance.
 
 ## Related questions
 
@@ -44,7 +52,10 @@ Q-0014 does not determine a specific reference format, dependency-graph structur
 
 ## Related research
 
-Not assigned yet.
+- [RSCH-0002 — Safe Physical File Updates](../../research/RSCH-0002-safe-physical-file-updates.md)
+- [RSCH-0004 — Object Relationships and Alternative Assertions](../../research/RSCH-0004-object-relationships-alternative-assertions.md)
+- [RSCH-0007 — Structured File Sanitization](../../research/RSCH-0007-structured-file-sanitization.md)
+- [RSCH-0008 — Media Steganography and Steganalysis](../../research/RSCH-0008-media-steganography-steganalysis.md)
 
 ## Related requirements
 
@@ -52,6 +63,7 @@ None yet.
 
 ## Related design documents
 
+- [USE-0003 — Structured Screenshot as Input to an AI System](../../use-cases/USE-0003-structured-screenshot-ai-input.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 - [USE-0001 — Screenshot Preserving Structured User Content](../../use-cases/USE-0001-structured-screenshot-content.md)
 
@@ -61,4 +73,7 @@ Not resolved.
 
 ## History
 
+- 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
+
+- 2026-10-18 — distinction between ordinary editing and sanitization clarified; operations over whole objects and fragments added; status remains `OPEN`.
 - 2026-10-01 — question created from the development of USE-0002; status `OPEN`, no resolution accepted.

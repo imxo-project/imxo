@@ -26,7 +26,9 @@ IMXO needs to represent integrity and trust state, including possible inconsiste
 
 ## Related research
 
-Not assigned yet.
+- [RSCH-0006 — Integrity, Consistency, and Trust Boundaries](../../research/RSCH-0006-integrity-consistency-trust-boundaries.md)
+- [RSCH-0008 — Media Steganography and Steganalysis](../../research/RSCH-0008-media-steganography-steganalysis.md)
+- [RSCH-0010 — AI Ingestion Threats and Semantic Laundering](../../research/RSCH-0010-ai-ingestion-threats-semantic-laundering.md)
 
 ## Related requirements
 
@@ -34,6 +36,7 @@ None yet.
 
 ## Related design documents
 
+- [USE-0003 — Structured Screenshot as Input to an AI System](../../use-cases/USE-0003-structured-screenshot-ai-input.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
@@ -41,6 +44,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
 - 2026-10-01 — scope expanded with verification of the sanitized result from USE-0002; status remains `OPEN`.

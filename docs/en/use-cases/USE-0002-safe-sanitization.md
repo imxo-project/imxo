@@ -83,6 +83,8 @@ The scenario begins when a user or automated system determines that some content
 
 The reason may be preparing the file for publication or transfer, applying data-minimization rules, correcting erroneous content, removing an object, or another operation specifically intended to stop retaining the former content in the final file.
 
+Ordinary editing also differs from sanitization: it may change a composition and related representations without promising irreversible removal of the original content. Sanitization, by contrast, expresses an intent to exclude selected data from the final distributed file together with reliably known dependent and derived representations.
+
 Sanitization is distinct from temporary concealment.
 
 Temporary concealment may leave the original content as part of the file so that it can be displayed again later.
@@ -599,7 +601,7 @@ Such research is created as separate `RSCH` artifacts when the relevant topic en
 
 [`USE-0001 — Screenshot Preserving Structured User Content`](USE-0001-structured-screenshot-content.md) directly created the need to consider safe removal and cascading update of related data separately.
 
-Planned `USE-0003`, `USE-0004`, and `USE-0006` may also affect this scenario after their cards are created because automated agents, computer vision, and machine-generated semantic annotations can create additional derived representations.
+[`USE-0003 — Structured Screenshot as Input to an AI System`](USE-0003-structured-screenshot-ai-input.md) also affects this scenario because automated agents and machine-generated semantic annotations can create additional derived representations. Planned `USE-0004` will separately examine ordinary editing and representation consistency; planned `USE-0007` will address machine-generated semantic annotations. Both may add further coverage after their cards are published.
 
 ### Related project questions
 
@@ -616,7 +618,15 @@ Planned `USE-0003`, `USE-0004`, and `USE-0006` may also affect this scenario aft
 
 ### Related research
 
-Not assigned yet.
+- [RSCH-0001 — Container Architecture Comparison](../research/RSCH-0001-container-architecture-comparison.md)
+- [RSCH-0002 — Safe Physical File Updates](../research/RSCH-0002-safe-physical-file-updates.md)
+- [RSCH-0004 — Object Relationships and Alternative Assertions](../research/RSCH-0004-object-relationships-alternative-assertions.md)
+- [RSCH-0005 — Provenance and Transformation Chains](../research/RSCH-0005-provenance-transformation-chains.md)
+- [RSCH-0006 — Integrity, Consistency, and Trust Boundaries](../research/RSCH-0006-integrity-consistency-trust-boundaries.md)
+- [RSCH-0007 — Structured File Sanitization](../research/RSCH-0007-structured-file-sanitization.md)
+- [RSCH-0008 — Media Steganography and Steganalysis](../research/RSCH-0008-media-steganography-steganalysis.md)
+
+These cards remain `DRAFT`; substantive research starts only after review and approval of the overall plan.
 
 ### Related requirements
 
@@ -734,3 +744,7 @@ A further boundary was drawn between structural IMXO sanitization and steganogra
 The scenario identified an independent open question about safe-modification and cascade-operation semantics, recorded as [Q-0014](../project/questions/Q-0014-safe-editing-cascade-operations.md).
 
 2026-10-01 — the card was refined following review: architectural assumptions were neutralized, independent external bases were added, and the identified unknowns were linked to existing `Q` cards and the new `Q-0014`.
+
+2026-10-18 — links to the published USE-0003 and the initial DRAFT research cards were added and later redirected to their English mirrors.
+
+2026-10-18 — ordinary editing explicitly separated from sanitization; planned USE-0004 linked and the machine-semantics working number updated.

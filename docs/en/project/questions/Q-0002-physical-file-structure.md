@@ -30,7 +30,9 @@ PREP-00 deliberately leaves the binary structure undefined until container alter
 
 ## Related research
 
-Not assigned yet.
+- [RSCH-0001 — Container Architecture Comparison](../../research/RSCH-0001-container-architecture-comparison.md)
+- [RSCH-0002 — Safe Physical File Updates](../../research/RSCH-0002-safe-physical-file-updates.md)
+- [RSCH-0007 — Structured File Sanitization](../../research/RSCH-0007-structured-file-sanitization.md)
 
 ## Related requirements
 
@@ -45,6 +47,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 
 - 2026-09-19 — question transferred from PREP-00 into a separate card.
 - 2026-10-01 — scope expanded with physical sanitization implications from USE-0002; status remains `OPEN`.
