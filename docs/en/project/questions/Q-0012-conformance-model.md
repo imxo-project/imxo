@@ -11,7 +11,7 @@ What should the normative IMXO conformance model be?
 
 ## Context
 
-Conformance levels, mandatory implementation capabilities, and validation rules have not yet been defined. Planned USE-0004 adds future ordinary-editing test cases that must not be conflated with sanitization guarantees.
+Conformance levels, mandatory implementation capabilities, and validation rules have not yet been defined. Published [`USE-0004`](../../use-cases/USE-0004-structured-image-editing.md) is a source of future ordinary-editing test cases that must not be conflated with sanitization guarantees. It does not establish a normative test suite.
 
 ## Scope
 
@@ -47,6 +47,7 @@ None yet.
 ## Related design documents
 
 - [USE-0003 — Structured Screenshot as Input to an AI System](../../use-cases/USE-0003-structured-screenshot-ai-input.md)
+- [USE-0004 — Editing a Structured Image While Preserving Representation Consistency](../../use-cases/USE-0004-structured-image-editing.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
@@ -54,6 +55,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-28 — published USE-0004 identified as a source of future test cases without creating a normative test matrix; status remains `OPEN`.
 
 - 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 

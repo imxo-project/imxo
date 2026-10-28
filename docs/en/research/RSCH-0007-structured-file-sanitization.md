@@ -4,7 +4,8 @@
 **Area:** Privacy / Sanitization  
 **Related questions:** Q-0002, Q-0012, Q-0014  
 **Related requirements:** none  
-**Related use cases:** USE-0002  
+**Related use cases:** USE-0002, USE-0004
+
 **Supersedes:** none  
 **Created:** 2026-10-18
 
@@ -56,13 +57,15 @@ Not researched yet. Conclusions and possible recommendations will appear only af
 ## 9. Related Documents
 
 - Questions: [Q-0002](../project/questions/Q-0002-physical-file-structure.md), [Q-0012](../project/questions/Q-0012-conformance-model.md), [Q-0014](../project/questions/Q-0014-safe-editing-cascade-operations.md)
-- Use cases: [USE-0002](../use-cases/USE-0002-safe-sanitization.md)
+- Use cases: [USE-0002](../use-cases/USE-0002-safe-sanitization.md), [USE-0004](../use-cases/USE-0004-structured-image-editing.md) (ordinary editing as a boundary case)
 
 - Requirements: none
 - Design: none
 - ADR: none
 
 ## 10. History
+
+- 2026-10-28 — linked USE-0004 as an ordinary-editing boundary case; status remains `DRAFT`.
 
 - 2026-10-18 — research definition expanded with ordinary fragment-editing cases in preparation for planned USE-0004; status remains `DRAFT`.
 - 2026-10-18 — research definition created; status DRAFT, substantive research not started.

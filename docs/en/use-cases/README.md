@@ -47,7 +47,7 @@ Neither state automatically creates normative requirements.
 | [`USE-0001`](USE-0001-structured-screenshot-content.md) | [Screenshot Preserving Structured User Content](USE-0001-structured-screenshot-content.md) | `REVIEW` | `CANDIDATE` | Preserves the visual screenshot together with safe, spatially associated text and user-relevant semantics without turning the file into a dump of application state. |
 | [`USE-0002`](USE-0002-safe-sanitization.md) | [Safe Sanitization of a Structured Image](USE-0002-safe-sanitization.md) | `REVIEW` | `CANDIDATE` | Removes selected content together with reliably known dependent and derived representations without incorrectly removing independent data. |
 | [`USE-0003`](USE-0003-structured-screenshot-ai-input.md) | [Structured Screenshot as Input to an AI System](USE-0003-structured-screenshot-ai-input.md) | `REVIEW` | `CANDIDATE` | Uses a captured visual representation and available structured assertions in an AI system while accounting for provenance, conflicts, incompleteness, and trust boundaries. |
-
+| [`USE-0004`](USE-0004-structured-image-editing.md) | [Editing a Structured Image While Preserving Representation Consistency](USE-0004-structured-image-editing.md) | `DRAFT` | `CANDIDATE` | Covers ordinary editing of raster, vector, and structured content while assessing geometry, semantic applicability, identity, relationships, provenance, and result-verification boundaries separately. |
 
 ## Planned use cases
 
@@ -55,7 +55,6 @@ The entries below are only a working roadmap. These cards have not yet been crea
 
 | Working number | Working title | Why it is needed |
 |---|---|---|
-| `USE-0004` | Editing a Structured Image While Preserving Representation Consistency | Consider ordinary editing of raster, vector, and structured content—including moving, copying, partially selecting, splitting and joining fragments, cropping, overlapping, and changing text and objects—and its effects on geometry, semantic assertions, object identity, relationships, and provenance, separately from sanitization. |
 | `USE-0005` | Image with Computer-Vision Annotations | Describe human- or machine-created boxes, polygons, masks, labels, and other CV annotations, their provenance, relationships to common ecosystems, and continued validity after image editing. |
 | `USE-0006` | Long-Lived Scientific, Museum, or Archival Image | Consider long retention, preservation, migration, offline or self-contained use, provenance, and verification horizons without unnecessary dependence on external services. |
 | `USE-0007` | Image with Machine-Generated Semantic Annotations | Consider a raster with objects, regions, and descriptions from a camera, capture tool, or later analyzer, the provenance and trust of machine assertions, and reuse of the same information by different consumers. |

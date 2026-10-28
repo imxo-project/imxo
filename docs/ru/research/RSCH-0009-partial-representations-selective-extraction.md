@@ -4,7 +4,8 @@
 **Area:** Logical model / Processing  
 **Related questions:** Q-0003, Q-0011, Q-0012  
 **Related requirements:** none  
-**Related use cases:** USE-0003  
+**Related use cases:** USE-0003, USE-0004
+
 **Supersedes:** none  
 **Created:** 2026-10-18
 
@@ -55,7 +56,7 @@
 ## 9. Связанные документы
 
 - Questions: [Q-0003](../project/questions/Q-0003-logical-object-model.md), [Q-0011](../project/questions/Q-0011-sdk-integrations.md), [Q-0012](../project/questions/Q-0012-conformance-model.md)
-- Use cases: [USE-0003](../use-cases/USE-0003-structured-screenshot-ai-input.md)
+- Use cases: [USE-0003](../use-cases/USE-0003-structured-screenshot-ai-input.md), [USE-0004](../use-cases/USE-0004-structured-image-editing.md)
 
 - Requirements: none
 - Design: none
@@ -63,6 +64,7 @@
 
 ## 10. История
 
+- 2026-10-28 — добавлена связь с опубликованным USE-0004; статус сохранён как `DRAFT`.
 - 2026-10-18 — создано полное английское зеркало без изменения статуса или исследовательских выводов.
 - 2026-10-18 — постановка дополнена случаями обычного редактирования фрагментов при подготовке планируемого USE-0004; статус сохранён как `DRAFT`.
 - 2026-10-18 — создана постановка исследования; статус DRAFT, фактическое исследование не начато.

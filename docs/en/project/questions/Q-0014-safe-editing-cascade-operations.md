@@ -38,7 +38,7 @@ Two operation classes are distinguished here. **Ordinary editing** changes visib
 
 Q-0014 does not determine a universal cascade algorithm, mandatory transformation history, mandatory retention of former pixels, a specific reference format, dependency-graph structure, mandatory full file rebuild, particular library API, mandatory use of AI, particular transactional-write model, or built-in cryptography.
 
-Planned `USE-0004` will separately examine ordinary editing of a structured image; this question card neither replaces that scenario nor decides it in advance.
+Published [`USE-0004`](../../use-cases/USE-0004-structured-image-editing.md) separately examines ordinary editing of a structured image; this question card neither replaces that scenario nor decides it in advance.
 
 ## Related questions
 
@@ -64,6 +64,7 @@ None yet.
 ## Related design documents
 
 - [USE-0003 — Structured Screenshot as Input to an AI System](../../use-cases/USE-0003-structured-screenshot-ai-input.md)
+- [USE-0004 — Editing a Structured Image While Preserving Representation Consistency](../../use-cases/USE-0004-structured-image-editing.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 - [USE-0001 — Screenshot Preserving Structured User Content](../../use-cases/USE-0001-structured-screenshot-content.md)
 
@@ -72,6 +73,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-28 — backlink to published USE-0004 added while retaining the ordinary-editing and sanitization boundary; status remains `OPEN`.
 
 - 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 

@@ -3,7 +3,7 @@
 **Status:** REVIEW  
 **Disposition:** CANDIDATE  
 **Created:** 2026-09-26  
-**Updated:** 2026-10-01
+**Updated:** 2026-10-28
 
 > A `USE` is an informative description of an application scenario. This card is not a normative requirement, an architectural decision, or evidence that a particular feature is required.
 
@@ -83,7 +83,7 @@ The scenario begins when a user or automated system determines that some content
 
 The reason may be preparing the file for publication or transfer, applying data-minimization rules, correcting erroneous content, removing an object, or another operation specifically intended to stop retaining the former content in the final file.
 
-Ordinary editing also differs from sanitization: it may change a composition and related representations without promising irreversible removal of the original content. Sanitization, by contrast, expresses an intent to exclude selected data from the final distributed file together with reliably known dependent and derived representations.
+Ordinary editing also differs from sanitization: it may change a composition and related representations without promising irreversible removal of the original content. This separate scenario is described in [`USE-0004`](USE-0004-structured-image-editing.md). Sanitization, by contrast, expresses an intent to exclude selected data from the final distributed file together with reliably known dependent and derived representations.
 
 Sanitization is distinct from temporary concealment.
 
@@ -601,7 +601,11 @@ Such research is created as separate `RSCH` artifacts when the relevant topic en
 
 [`USE-0001 — Screenshot Preserving Structured User Content`](USE-0001-structured-screenshot-content.md) directly created the need to consider safe removal and cascading update of related data separately.
 
-[`USE-0003 — Structured Screenshot as Input to an AI System`](USE-0003-structured-screenshot-ai-input.md) also affects this scenario because automated agents and machine-generated semantic annotations can create additional derived representations. Planned `USE-0004` will separately examine ordinary editing and representation consistency; planned `USE-0007` will address machine-generated semantic annotations. Both may add further coverage after their cards are published.
+[`USE-0003 — Structured Screenshot as Input to an AI System`](USE-0003-structured-screenshot-ai-input.md) uses related representations as input to an automated consumer.
+
+[`USE-0004 — Editing a Structured Image While Preserving Representation Consistency`](USE-0004-structured-image-editing.md) describes ordinary changes without a guarantee of irreversibly removing source content. This card retains the stricter guarantees expected from a separate sanitization operation.
+
+Planned `USE-0007` will address machine-generated semantic annotations and may further affect this card after publication.
 
 ### Related project questions
 
@@ -718,6 +722,8 @@ These systems do not determine IMXO's design and are not copied literally. They 
 If later work shows that this scenario needs to be divided into several materially different use cases, the new cards receive their own identifiers and supersession relationships are recorded under PREP-08.
 
 ## 34. History
+
+2026-10-28 — linked the published USE-0004 while retaining the strict boundary between ordinary editing and a separate sanitization operation.
 
 `USE-0002` arose from safe-modification and removal questions identified while developing [`USE-0001`](USE-0001-structured-screenshot-content.md).
 

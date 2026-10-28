@@ -31,8 +31,10 @@ Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, an
 - [`project/PREP-08-use-case-research-planning-process-amendment.md`](project/PREP-08-use-case-research-planning-process-amendment.md) — targeted use-case and research-planning process amendment;
 - [`use-cases/USE-0001-structured-screenshot-content.md`](use-cases/USE-0001-structured-screenshot-content.md) — screenshot preserving structured user content;
 - [`use-cases/USE-0002-safe-sanitization.md`](use-cases/USE-0002-safe-sanitization.md) — safe sanitization of a structured image;
+- [`use-cases/USE-0003-structured-screenshot-ai-input.md`](use-cases/USE-0003-structured-screenshot-ai-input.md) — structured screenshot as input to an AI system;
+- [`use-cases/USE-0004-structured-image-editing.md`](use-cases/USE-0004-structured-image-editing.md) — editing a structured image while preserving representation consistency;
 - [project/research-plan.md](project/research-plan.md) — DRAFT plan for the initial research queue;
-- [esearch/README.md](research/README.md) — registry of the existing RSCH cards;
+- [`research/README.md`](research/README.md) — registry of the existing RSCH cards;
 - [`project/open-questions.md`](project/open-questions.md) — living index of open questions;
 - [`project/questions/`](project/questions/) — individual cards for material questions;
 - [`project/questions/Q-0013-accessibility-regulatory-adoption.md`](project/questions/Q-0013-accessibility-regulatory-adoption.md) — open question on accessibility standards, regulatory mapping, and adoption;
@@ -48,7 +50,7 @@ Identifiers such as `PREP-00`, `RSCH-01`, `REQ-001`, `ADR-0001`, `object_id`, an
 
 Official project policies: [`GOVERNANCE.md`](../../GOVERNANCE.md) and [`IPR_POLICY.md`](../../IPR_POLICY.md). They are published only in English.
 
-The initial `PREP-00` through `PREP-07` preparation baseline was completed. `PREP-08` was added as a targeted process amendment before systematic research began. `USE-0001`, `USE-0002`, and `USE-0003` are published in synchronized Russian and English versions with `REVIEW` status and `CANDIDATE` disposition. A DRAFT research plan and 12 initial `RSCH` cards are available in synchronized Russian and English versions and await Project Lead review; substantive research has not begun.
+The initial `PREP-00` through `PREP-07` preparation baseline was completed. `PREP-08` was added as a targeted process amendment before systematic research began. `USE-0001`, `USE-0002`, and `USE-0003` are published in synchronized Russian and English versions with `REVIEW` status and `CANDIDATE` disposition. `USE-0004` is also published in synchronized Russian and English versions as `DRAFT / CANDIDATE`. A DRAFT research plan and 12 initial `RSCH` cards are available in synchronized Russian and English versions and await Project Lead review; substantive research has not begun.
 
 Russian documentation is available under [`../ru/`](../ru/README.md).
 

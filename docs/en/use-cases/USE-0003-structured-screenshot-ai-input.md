@@ -3,7 +3,7 @@
 **Status:** REVIEW  
 **Disposition:** CANDIDATE  
 **Created:** 2026-10-18  
-**Updated:** 2026-10-18
+**Updated:** 2026-10-28
 
 > A `USE` is an informative description of an IMXO application scenario. This card is not a normative requirement, an architectural decision, research evidence, or a commitment to include a particular feature in the standard.
 
@@ -164,6 +164,8 @@ The raster, text, and accessibility tree may be obtained at times `T1`, `T2`, an
 
 Partial editing may make a previous machine assertion inapplicable to the new composition even when new fragment coordinates can be calculated. Splitting a recognized object does not automatically confirm the same classification for each fragment; currency may remain unknown.
 
+Consequences of changing a saved image are examined in more detail in [`USE-0004`](USE-0004-structured-image-editing.md). A known link to an earlier state does not prove the original annotation true, and a successful geometric transformation does not necessarily confirm its applicability to new content.
+
 Related structure may also become stale after editing. The format does not guarantee universally atomic capture or prescribe a specific synchronization method, but it does not assume that data obtained at different times or modified independently should be falsely declared consistent. Currency of an external live application is considered separately from consistency of the saved file.
 
 ## 24. Partial Data Retrieval and Completeness
@@ -177,6 +179,8 @@ Completeness does not mean a universal statement that “nothing else exists in 
 An adapter may select, reduce, and transform data, but it may also lose relationships, provenance, alternatives, or unknown currency, or present an unsubstantiated value as verified. Correctness of the source representation, extraction, and transformation must be distinguished.
 
 Not all content must be supplied to the model. Reduction, however, must not silently turn uncertainty into certainty or a partial representation into a complete one. This card does not design a request format for a particular model or an adapter API.
+
+If an editor or adapter loses information about limitations while retaining the annotation itself, the result may appear more certain than the source data. The assertion actually present in the file, the context known to the editor, and the representation received by the AI consumer must be distinguished. A specific model for conveying limitations remains open.
 
 ## 26. Resource Limits and Inability to Process
 
@@ -230,6 +234,7 @@ Topics are linked to `Q` cards and the overall research program; `RSCH` identifi
 
 - [`USE-0001`](USE-0001-structured-screenshot-content.md) — source of a permitted structured screenshot.
 - [`USE-0002`](USE-0002-safe-sanitization.md) — safe sanitization of saved content.
+- [`USE-0004`](USE-0004-structured-image-editing.md) — ordinary editing of a structured image and applicability boundaries of related assertions after changes.
 
 Future CV, machine-semantics, and accessibility scenarios may refine the shared models, but they are not considered published until their files exist.
 
@@ -311,6 +316,8 @@ Before approving this section, an agent must verify that the links are available
 `USE-0003` does not supersede earlier scenarios.
 
 ## 37. History
+
+- 2026-10-28 — linked the published USE-0004 and clarified the boundary among a retained annotation, known context, and the representation delivered to an AI consumer.
 
 - 2026-10-17 — concept of automated structured-screenshot consumption, trust, conflicts, partial processing, responsibility boundaries, and research hypotheses agreed; critical passes over working sections 1–38 completed.
 - 2026-10-18 — complete Russian edition prepared for publication as `REVIEW / CANDIDATE`; unresolved technical matters left to `Q` and `RSCH`.

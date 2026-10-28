@@ -282,21 +282,19 @@ A specialized persistent edit history may be considered in a separate scenario b
 
 ## 23. Image changes and related data
 
-This rule applies to the entire IMXO ecosystem, not only to one particular screenshot tool.
+Subsequent editing of a structured image is addressed as a separate scenario in [`USE-0004`](USE-0004-structured-image-editing.md).
 
-Any editor that correctly supports modifying IMXO should account for relationships between the raster and structured data.
+Changing graphical or structured content may affect geometry, relationships, provenance, and applicability of related information. Assessment of a correct result should account for known dependencies and avoid presenting a stale or unverified assertion as certainly applicable to the current image.
 
-If an image region changes, the editor should determine which textual, semantic, structural, and other information no longer describes the final image correctly.
+For example, if half of a region previously recognized as a face is concealed, simply reducing its geometric box does not confirm that the remainder is a new valid face region.
 
-Such information should be updated, removed, or marked invalid.
+Depending on the purpose of the operation and available information, possible outcomes include transformation, renewed verification, exclusion of an annotation, preservation with a known limitation, or inability to produce a result with the requested properties. Preserving a record or its geometric binding does not by itself confirm the previous semantics.
 
-A simple geometric change to an annotation region is not evidence that its meaning remains valid.
+After editing, an external analyzer or user may create new derived annotations for the resulting image. This USE does not establish a built-in obligation to rerun OCR, CV, or AI analysis after every change.
 
-For example, if half of a region previously recognized as a face is concealed, the rectangle cannot simply be reduced and the remainder treated as a new valid face region. The old annotation should be removed or verified again.
+Complete transformation history is not assumed. Specific cascading rules and SDK capabilities remain open in [`Q-0003`](../project/questions/Q-0003-logical-object-model.md), [`Q-0011`](../project/questions/Q-0011-sdk-integrations.md), [`Q-0012`](../project/questions/Q-0012-conformance-model.md), and [`Q-0014`](../project/questions/Q-0014-safe-editing-cascade-operations.md).
 
-After editing, any user may nevertheless run text recognition, computer vision, or AI analysis again on the final image and create new derived annotations with new provenance.
-
-Rules for such cascading changes should be defined by a specification or profile, and official IMXO libraries should provide editor developers with reusable implementations of these operations. Using an official library is not a prerequisite for implementing the format.
+These statements describe the expected application outcome rather than prescribing a particular algorithm to every editor.
 
 ## 24. Concealing and removing information
 
@@ -314,7 +312,7 @@ If a child object is concealed, a larger independent annotation may remain valid
 
 Established document-redaction practice likewise treats visible content separately from hidden data such as metadata, comments, hidden layers, and deleted or cropped content. This is a useful external precedent for IMXO.
 
-The detailed safe-concealment model is addressed separately in `USE-0002`.
+The detailed safe-concealment model is addressed separately in [`USE-0002`](USE-0002-safe-sanitization.md). Ordinary cropping or occlusion alone does not confirm that sanitization was performed.
 
 ## 25. Completeness of structured information
 
@@ -492,7 +490,7 @@ These results should be documented in separate research materials rather than du
 
 ## 40. Related use cases
 
-`USE-0004` — Editing a Structured Image While Preserving Representation Consistency — is planned as a separate scenario for subsequent modification of an already created screenshot. Its card has not been published.
+[`USE-0004 — Editing a Structured Image While Preserving Representation Consistency`](USE-0004-structured-image-editing.md) addresses subsequent modification of an existing screenshot and the applicability boundaries of related information.
 
 [USE-0002 — Safe Sanitization of a Structured Image](USE-0002-safe-sanitization.md). It addresses cascading removal of related information, handling of additional representations, and semantic validity of annotations after image modification in detail.
 
@@ -578,6 +576,8 @@ The [W3C PROV overview](https://www.w3.org/TR/prov-overview/) demonstrates the u
 Does not supersede any previous `USE`.
 
 ## 46. History
+
+2026-10-28 — §23 aligned with published USE-0004: premature obligations for every editor and official library were removed while open cascading questions were retained; the boundary between ordinary editing and sanitization was clarified.
 
 The initial scenario began as the idea of preserving the text of an ordinary screenshot without mandatory repeat recognition.
 

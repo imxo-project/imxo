@@ -11,7 +11,7 @@ What should the IMXO logical object model be?
 
 ## Context
 
-The exact logical structure of IMXO has not yet been established. It must be defined after the foundational research and requirements refinement. Planned USE-0004 adds editing cases in which a geometric region, object identity, and an assertion about that object may change differently.
+The exact logical structure of IMXO has not yet been established. It must be defined after the foundational research and requirements refinement. Published [`USE-0004`](../../use-cases/USE-0004-structured-image-editing.md) adds editing cases in which a geometric region, object identity, and an assertion about that object may change differently.
 
 ## Scope
 
@@ -47,6 +47,7 @@ None yet.
 ## Related design documents
 
 - [USE-0003 — Structured Screenshot as Input to an AI System](../../use-cases/USE-0003-structured-screenshot-ai-input.md)
+- [USE-0004 — Editing a Structured Image While Preserving Representation Consistency](../../use-cases/USE-0004-structured-image-editing.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
@@ -54,6 +55,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-28 — backlink to published USE-0004 added; status remains `OPEN`.
 
 - 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 

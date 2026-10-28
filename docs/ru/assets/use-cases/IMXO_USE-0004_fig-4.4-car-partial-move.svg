@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 510" width="1280" height="510" role="img" aria-labelledby="title desc">
+<title id="title">Рис. 4.4 — Частичное перемещение автомобиля: исходная область и два фрагмента</title>
+<desc id="desc">Слева один распознанный автомобиль с линией разреза. Справа задний и передний фрагменты изображения разнесены по горизонтали. Прежняя метка автомобиль не переносится на фрагменты автоматически.</desc>
+<defs>
+  <style>
+    .h{font:700 24px Arial, 'DejaVu Sans', sans-serif; fill:#162838}
+    .s{font:17px Arial, 'DejaVu Sans', sans-serif; fill:#40576a}
+    .tag{font:700 17px Arial, 'DejaVu Sans', sans-serif; fill:#195c81}
+    .note{font:16px Arial, 'DejaVu Sans', sans-serif; fill:#51697b}
+  </style>
+  <clipPath id="rear"><rect x="0" y="0" width="202" height="180"/></clipPath>
+  <clipPath id="front"><rect x="202" y="0" width="178" height="180"/></clipPath>
+  <g id="car">
+    <path d="M22 110 L38 88 Q45 81 74 81 L112 79 L149 39 Q154 33 171 33 L241 33 Q254 33 262 46 L294 80 L329 84 Q343 88 346 101 L349 124 Q349 134 340 134 L27 134 Q17 134 17 124Z" fill="#4d94cb" stroke="#285b83" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M152 75 L178 43 L239 43 L263 77Z" fill="#d4ebf6" stroke="#285b83" stroke-width="2"/>
+    <path d="M203 43 L203 76" stroke="#285b83" stroke-width="2.5"/>
+    <path d="M119 82 L295 82" stroke="#24577e" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M208 86 L208 124" stroke="#285b83" stroke-width="2"/>
+    <path d="M217 91 L233 91" stroke="#f1f5fa" stroke-width="4" stroke-linecap="round"/>
+    <path d="M45 93 L67 93" stroke="#fff5c2" stroke-width="6" stroke-linecap="round"/>
+    <path d="M331 95 L341 95" stroke="#fff5c2" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="91" cy="134" r="25" fill="#263647" stroke="#627e8d" stroke-width="4"/>
+    <circle cx="91" cy="134" r="11" fill="#c4d0d7"/>
+    <circle cx="286" cy="134" r="25" fill="#263647" stroke="#627e8d" stroke-width="4"/>
+    <circle cx="286" cy="134" r="11" fill="#c4d0d7"/>
+  </g>
+</defs>
+<rect width="1280" height="510" rx="16" fill="#ffffff"/>
+<rect x="22" y="18" width="595" height="401" rx="12" fill="#f5f8fb" stroke="#d7e0e9" stroke-width="2"/>
+<rect x="636" y="18" width="622" height="401" rx="12" fill="#f5f8fb" stroke="#d7e0e9" stroke-width="2"/>
+<text x="51" y="62" class="h">До редактирования</text>
+<text x="665" y="62" class="h">После частичного перемещения</text>
+<text x="51" y="91" class="s">Исходное распознавание: «автомобиль»</text>
+<text x="665" y="91" class="s">Выделенная часть перенесена вправо</text>
+<g transform="translate(132 164)"><use href="#car" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#car"/></g>
+<rect x="137" y="182" width="365" height="153" rx="7" fill="none" stroke="#1889bb" stroke-width="2.5" stroke-dasharray="8 5"/>
+<path d="M334 163 V349" stroke="#cf8539" stroke-width="2.5" stroke-dasharray="6 5"/>
+<text x="343" y="355" font-size="15" font-family="Arial,DejaVu Sans,sans-serif" fill="#a36625">Граница выделения</text>
+<text x="51" y="391" class="tag">Одна область и исходная аннотация</text>
+<g transform="translate(683 164)" clip-path="url(#rear)"><use href="#car" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#car"/></g>
+<g transform="translate(812 164)" clip-path="url(#front)"><use href="#car" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#car"/></g>
+<rect x="677" y="183" width="208" height="153" rx="7" fill="none" stroke="#1889bb" stroke-width="2.5" stroke-dasharray="7 5"/>
+<rect x="1010" y="183" width="157" height="153" rx="7" fill="none" stroke="#cf8539" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="711" y="377" class="tag">Фрагмент 1</text>
+<text x="1026" y="377" class="tag" fill="#995b1e">Фрагмент 2</text>
+<text x="665" y="396" class="note">Оба участка происходят из исходного изображения</text>
+<rect x="22" y="436" width="1236" height="56" rx="10" fill="#eef4f8"/>
+<text x="43" y="460" class="tag">Известно:</text>
+<text x="145" y="460" class="note">какое содержимое перемещено и как изменились координаты</text>
+<text x="43" y="482" class="tag">Не установлено автоматически:</text>
+<text x="337" y="482" class="note">что каждый фрагмент является отдельным автомобилем</text>
+</svg>

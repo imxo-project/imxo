@@ -11,7 +11,7 @@ The plan and the initial set of cards require Project Lead review and approval b
 ## Goals of the current stage
 
 - define verifiable boundaries for the first independent research tasks;
-- address factual gaps identified by `USE-0001…USE-0003` and `Q-0001…Q-0014`;
+- address factual gaps identified by `USE-0001…USE-0004` and `Q-0001…Q-0014`;
 - avoid selecting container, logical-model, trust, SDK, or conformance architecture;
 - prepare parallel work without identifier or file conflicts.
 
@@ -19,18 +19,18 @@ The plan and the initial set of cards require Project Lead review and approval b
 
 | ID | Topic | Priority | Status | Primary relationships | Phase and dependencies |
 |---|---|---|---|---|---|
-| [RSCH-0001](../research/RSCH-0001-container-architecture-comparison.md) | Container Architecture Comparison | P0 | `DRAFT` | Q-0001, Q-0002; USE-0001/0002/0003 | Independent foundation research |
-| [RSCH-0002](../research/RSCH-0002-safe-physical-file-updates.md) | Safe Physical File Updates | P0 | `DRAFT` | Q-0002, Q-0012, Q-0014; USE-0002 | Parallel with RSCH-0001; reconcile findings later |
-| [RSCH-0003](../research/RSCH-0003-text-layer-models.md) | Text Layer Models | P0 | `DRAFT` | Q-0003, Q-0006; USE-0001 | Independent research |
-| [RSCH-0004](../research/RSCH-0004-object-relationships-alternative-assertions.md) | Objects, Relationships, and Alternative Assertions | P0 | `DRAFT` | Q-0003, Q-0009, Q-0014; USE-0001/0002/0003 | Independent survey; design later |
-| [RSCH-0005](../research/RSCH-0005-provenance-transformation-chains.md) | Provenance and Transformation Chains | P0 | `DRAFT` | Q-0007, Q-0009; USE-0001/0002/0003 | Parallel with RSCH-0004/0006 |
-| [RSCH-0006](../research/RSCH-0006-integrity-consistency-trust-boundaries.md) | Integrity, Consistency, and Trust Boundaries | P0 | `DRAFT` | Q-0007, Q-0008, Q-0012; USE-0002/0003 | Parallel with RSCH-0005 |
-| [RSCH-0007](../research/RSCH-0007-structured-file-sanitization.md) | Structured File Sanitization | P0 | `DRAFT` | Q-0002, Q-0012, Q-0014; USE-0002 | Separate from steganalysis; uses RSCH-0002 boundaries |
+| [RSCH-0001](../research/RSCH-0001-container-architecture-comparison.md) | Container Architecture Comparison | P0 | `DRAFT` | Q-0001, Q-0002; USE-0001/0002/0003/0004 | Independent foundation research |
+| [RSCH-0002](../research/RSCH-0002-safe-physical-file-updates.md) | Safe Physical File Updates | P0 | `DRAFT` | Q-0002, Q-0012, Q-0014; USE-0002/0004 | Parallel with RSCH-0001; reconcile findings later |
+| [RSCH-0003](../research/RSCH-0003-text-layer-models.md) | Text Layer Models | P0 | `DRAFT` | Q-0003, Q-0006; USE-0001/0004 | Independent research |
+| [RSCH-0004](../research/RSCH-0004-object-relationships-alternative-assertions.md) | Objects, Relationships, and Alternative Assertions | P0 | `DRAFT` | Q-0003, Q-0009, Q-0014; USE-0001/0002/0003/0004 | Independent survey; design later |
+| [RSCH-0005](../research/RSCH-0005-provenance-transformation-chains.md) | Provenance and Transformation Chains | P0 | `DRAFT` | Q-0007, Q-0009; USE-0001/0002/0003/0004 | Parallel with RSCH-0004/0006 |
+| [RSCH-0006](../research/RSCH-0006-integrity-consistency-trust-boundaries.md) | Integrity, Consistency, and Trust Boundaries | P0 | `DRAFT` | Q-0007, Q-0008, Q-0012; USE-0002/0003/0004 | Parallel with RSCH-0005 |
+| [RSCH-0007](../research/RSCH-0007-structured-file-sanitization.md) | Structured File Sanitization | P0 | `DRAFT` | Q-0002, Q-0012, Q-0014; USE-0002/0004 | Separate from steganalysis; uses RSCH-0002 boundaries |
 | [RSCH-0008](../research/RSCH-0008-media-steganography-steganalysis.md) | Media Steganography and Limits of Steganalysis | P1 | `DRAFT` | Q-0008, Q-0014; USE-0002 | Independent of structural sanitization |
-| [RSCH-0009](../research/RSCH-0009-partial-representations-selective-extraction.md) | Partial Representations and Selective Extraction | P0 | `DRAFT` | Q-0003, Q-0011, Q-0012; USE-0003 | Parallel with RSCH-0004; reconcile later |
+| [RSCH-0009](../research/RSCH-0009-partial-representations-selective-extraction.md) | Partial Representations and Selective Extraction | P0 | `DRAFT` | Q-0003, Q-0011, Q-0012; USE-0003/0004 | Parallel with RSCH-0004; reconcile later |
 | [RSCH-0010](../research/RSCH-0010-ai-ingestion-threats-semantic-laundering.md) | AI Ingestion Threats and Semantic Laundering | P1 | `DRAFT` | Q-0007, Q-0008, Q-0012; USE-0003 | Independent threat analysis |
 | [RSCH-0011](../research/RSCH-0011-ai-input-efficiency-comparison.md) | AI Input Preparation Comparison | P1 | `DRAFT` | Q-0011, Q-0012; USE-0003 | Method first; physical measurements after a prototype |
-| [RSCH-0012](../research/RSCH-0012-cv-annotation-interchange-formats.md) | CV Annotation Interchange Formats | P1 | `DRAFT` | Q-0003, Q-0009; USE-0001/0003 | Independent; future USE cards are not treated as published |
+| [RSCH-0012](../research/RSCH-0012-cv-annotation-interchange-formats.md) | CV Annotation Interchange Formats | P1 | `DRAFT` | Q-0003, Q-0009; USE-0001/0003/0004 | Independent; future USE cards are not treated as published |
 
 ## Topics without assigned RSCH identifiers
 
@@ -42,9 +42,9 @@ The plan and the initial set of cards require Project Lead review and approval b
 
 These rows do not reserve identifiers and are not research artifacts.
 
-## Preparation for planned USE-0004
+## Relationship to published USE-0004
 
-Ordinary fragment editing while preserving consistency has been added to existing `RSCH-0002`, `RSCH-0004`, `RSCH-0005`, `RSCH-0007`, `RSCH-0009`, and `RSCH-0012`. The additions cover moving and copying a whole object, cutting and moving part of one, copying a part, transforming a mask/bounding box/polygon, joining fragments, changing relationships, and operation by an editor that does not support some semantic annotations.
+[`USE-0004 — Editing a Structured Image While Preserving Representation Consistency`](../use-cases/USE-0004-structured-image-editing.md) is published as `DRAFT / CANDIDATE`. Ordinary fragment editing while preserving consistency is linked to existing `RSCH-0001`, `RSCH-0002`, `RSCH-0003`, `RSCH-0004`, `RSCH-0005`, `RSCH-0006`, `RSCH-0007`, `RSCH-0009`, and `RSCH-0012`. These links cover container constraints, text, moving and copying a whole object, cutting and moving part of one, copying a part, transforming a mask/bounding box/polygon, joining fragments, provenance, verification boundaries, sanitization as a separate boundary case, and operation by an editor that does not support some semantic annotations.
 
 The research must distinguish structural recalculation of geometry from the need to revalidate meaning. Moving, copying, splitting, merging, and sanitization are not treated as one operation. No new research card or identifier is created for this preparation.
 
@@ -75,6 +75,8 @@ The research must distinguish structural recalculation of geometry from the need
 5. The plan is updated to reflect actual state without reserving future identifiers.
 
 ## History
+
+- 2026-10-28 — linked the plan to published USE-0004 and the updated set of existing research cards; research statuses were unchanged.
 
 - 2026-10-18 — initial DRAFT plan, twelve initial research definitions, and three unnumbered later-queue topics created.
 - 2026-10-18 — planned USE-0004 editing cases integrated into existing research definitions; English mirror created.

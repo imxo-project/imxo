@@ -4,7 +4,8 @@
 **Area:** Container / Physical model  
 **Related questions:** Q-0001, Q-0002  
 **Related requirements:** none  
-**Related use cases:** USE-0001, USE-0002, USE-0003  
+**Related use cases:** USE-0001, USE-0002, USE-0003, USE-0004
+
 **Supersedes:** none  
 **Created:** 2026-10-18
 
@@ -53,13 +54,15 @@ Not researched yet. Conclusions and possible recommendations will appear only af
 ## 9. Related Documents
 
 - Questions: [Q-0001](../project/questions/Q-0001-container-architecture.md), [Q-0002](../project/questions/Q-0002-physical-file-structure.md)
-- Use cases: [USE-0001](../use-cases/USE-0001-structured-screenshot-content.md), [USE-0002](../use-cases/USE-0002-safe-sanitization.md), [USE-0003](../use-cases/USE-0003-structured-screenshot-ai-input.md)
+- Use cases: [USE-0001](../use-cases/USE-0001-structured-screenshot-content.md), [USE-0002](../use-cases/USE-0002-safe-sanitization.md), [USE-0003](../use-cases/USE-0003-structured-screenshot-ai-input.md), [USE-0004](../use-cases/USE-0004-structured-image-editing.md)
 
 - Requirements: none
 - Design: none
 - ADR: none
 
 ## 10. History
+
+- 2026-10-28 — linked published USE-0004; status remains `DRAFT`.
 
 - 2026-10-18 — research definition created; status DRAFT, substantive research not started.
 - 2026-10-18 — complete English mirror created without changing the research status or findings.

@@ -4,7 +4,8 @@
 **Area:** Annotations / CV  
 **Related questions:** Q-0003, Q-0009  
 **Related requirements:** none  
-**Related use cases:** USE-0001, USE-0003  
+**Related use cases:** USE-0001, USE-0003, USE-0004
+
 **Supersedes:** none  
 **Created:** 2026-10-18
 
@@ -55,13 +56,15 @@ Not researched yet. Conclusions and possible recommendations will appear only af
 ## 9. Related Documents
 
 - Questions: [Q-0003](../project/questions/Q-0003-logical-object-model.md), [Q-0009](../project/questions/Q-0009-cv-annotations.md)
-- Use cases: [USE-0001](../use-cases/USE-0001-structured-screenshot-content.md), [USE-0003](../use-cases/USE-0003-structured-screenshot-ai-input.md)
+- Use cases: [USE-0001](../use-cases/USE-0001-structured-screenshot-content.md), [USE-0003](../use-cases/USE-0003-structured-screenshot-ai-input.md), [USE-0004](../use-cases/USE-0004-structured-image-editing.md)
 
 - Requirements: none
 - Design: none
 - ADR: none
 
 ## 10. History
+
+- 2026-10-28 — linked published USE-0004; status remains `DRAFT`.
 
 - 2026-10-18 — research definition expanded with ordinary fragment-editing cases in preparation for planned USE-0004; status remains `DRAFT`.
 - 2026-10-18 — research definition created; status DRAFT, substantive research not started.

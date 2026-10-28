@@ -4,7 +4,8 @@
 **Area:** Storage / Recovery / Safety  
 **Related questions:** Q-0002, Q-0012, Q-0014  
 **Related requirements:** none  
-**Related use cases:** USE-0002  
+**Related use cases:** USE-0002, USE-0004
+
 **Supersedes:** none  
 **Created:** 2026-10-18
 
@@ -55,7 +56,7 @@
 ## 9. Связанные документы
 
 - Questions: [Q-0002](../project/questions/Q-0002-physical-file-structure.md), [Q-0012](../project/questions/Q-0012-conformance-model.md), [Q-0014](../project/questions/Q-0014-safe-editing-cascade-operations.md)
-- Use cases: [USE-0002](../use-cases/USE-0002-safe-sanitization.md)
+- Use cases: [USE-0002](../use-cases/USE-0002-safe-sanitization.md), [USE-0004](../use-cases/USE-0004-structured-image-editing.md)
 
 - Requirements: none
 - Design: none
@@ -63,6 +64,7 @@
 
 ## 10. История
 
+- 2026-10-28 — добавлена связь с опубликованным USE-0004; статус сохранён как `DRAFT`.
 - 2026-10-18 — создано полное английское зеркало без изменения статуса или исследовательских выводов.
 - 2026-10-18 — постановка дополнена случаями обычного редактирования фрагментов при подготовке планируемого USE-0004; статус сохранён как `DRAFT`.
 - 2026-10-18 — создана постановка исследования; статус DRAFT, фактическое исследование не начато.

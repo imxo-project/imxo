@@ -4,7 +4,8 @@
 **Area:** Text / Representation  
 **Related questions:** Q-0003, Q-0006  
 **Related requirements:** none  
-**Related use cases:** USE-0001  
+**Related use cases:** USE-0001, USE-0004
+
 **Supersedes:** none  
 **Created:** 2026-10-18
 
@@ -53,7 +54,7 @@
 ## 9. Связанные документы
 
 - Questions: [Q-0003](../project/questions/Q-0003-logical-object-model.md), [Q-0006](../project/questions/Q-0006-text-fonts-glyph-fallback.md)
-- Use cases: [USE-0001](../use-cases/USE-0001-structured-screenshot-content.md)
+- Use cases: [USE-0001](../use-cases/USE-0001-structured-screenshot-content.md), [USE-0004](../use-cases/USE-0004-structured-image-editing.md)
 
 - Requirements: none
 - Design: none
@@ -61,5 +62,6 @@
 
 ## 10. История
 
+- 2026-10-28 — добавлена связь с опубликованным USE-0004; статус сохранён как `DRAFT`.
 - 2026-10-18 — создано полное английское зеркало без изменения статуса или исследовательских выводов.
 - 2026-10-18 — создана постановка исследования; статус DRAFT, фактическое исследование не начато.

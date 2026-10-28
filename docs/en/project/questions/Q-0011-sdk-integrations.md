@@ -11,7 +11,7 @@ What should the future IMXO SDK, API, and integration model be after the core ar
 
 ## Context
 
-PREP-00 makes no final decisions about SDKs and integrations. These questions will be considered later, once the core models are sufficiently stable. Planned USE-0004 requires consideration of editors with complete and partial structural support without designing an API in advance.
+PREP-00 makes no final decisions about SDKs and integrations. These questions will be considered later, once the core models are sufficiently stable. Published [`USE-0004`](../../use-cases/USE-0004-structured-image-editing.md) requires consideration of editors with complete and partial structural support without designing an API in advance.
 
 ## Scope
 
@@ -42,6 +42,7 @@ None yet.
 
 ## Related design documents
 
+- [USE-0004 — Editing a Structured Image While Preserving Representation Consistency](../../use-cases/USE-0004-structured-image-editing.md)
 - [USE-0002 — Safe Sanitization of a Structured Image](../../use-cases/USE-0002-safe-sanitization.md)
 
 ## Resolution
@@ -49,6 +50,8 @@ None yet.
 Not resolved.
 
 ## History
+
+- 2026-10-28 — backlink to published USE-0004 added; status remains `OPEN`.
 
 - 2026-10-18 — links to the initial DRAFT research cards added and later redirected to their English mirrors; status remains `OPEN`.
 
